@@ -227,8 +227,6 @@ public class PatListeContentProvider implements ICommonViewerContentProvider, IL
 		}
 		if (pats.length > index) {
 			((TableViewer) viewer.getViewerWidget()).replace(pats[index], index);
-		} else {
-			((TableViewer) viewer.getViewerWidget()).replace("-", index); //$NON-NLS-1$
 		}
 	}
 	
