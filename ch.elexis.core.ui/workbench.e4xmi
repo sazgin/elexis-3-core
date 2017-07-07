@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_7UVYYGJQEee0epbhyPnLeg" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_7UVYYWJQEee0epbhyPnLeg" bindingContexts="_7UVZL2JQEee0epbhyPnLeg">
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList/>&#xD;&#xA;&lt;/workbench>"/>
+  <tags>activeSchemeId:ch.elexis.ui.keybindingScheme</tags>
+  <tags>ModelMigrationProcessor.001</tags>
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_7UVYYWJQEee0epbhyPnLeg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_7UVYYmJQEee0epbhyPnLeg" x="312" y="312" width="1024" height="768">
+    <persistedState key="coolBarVisible" value="true"/>
+    <persistedState key="perspectiveBarVisible" value="true"/>
+    <persistedState key="isRestored" value="true"/>
+    <tags>topLevel</tags>
+    <children xsi:type="basic:PartSashContainer" xmi:id="_7UVYYmJQEee0epbhyPnLeg" selectedElement="_7UVYY2JQEee0epbhyPnLeg" horizontal="true">
+      <children xsi:type="advanced:PerspectiveStack" xmi:id="_7UVYY2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_7UVYZGJQEee0epbhyPnLeg">
+        <children xsi:type="advanced:Perspective" xmi:id="_7UVYZGJQEee0epbhyPnLeg" elementId="ch.elexis.PatientPerspective" selectedElement="_7UVYZWJQEee0epbhyPnLeg" label="Patienten&#xfc;bersicht" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/group.png">
+          <tags>persp.perspSC:ch.elexis.PatientPerspective</tags>
+          <tags>persp.viewSC:ch.elexis.PatDetail_v2</tags>
+          <tags>persp.viewSC:ch.elexis.PatListView</tags>
+          <tags>persp.perspSC:ch.elexis.schoebufaelle</tags>
+          <tags>persp.viewSC:ch.elexis.HistoryView</tags>
+          <tags>persp.viewSC:ch.elexis.PatHeuteView</tags>
+          <tags>persp.viewSC:ch.elexis.Konsdetail</tags>
+          <tags>persp.viewSC:ch.elexis.Rezepte</tags>
+          <tags>persp.viewSC:ch.elexis.FallDetailView</tags>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_7UVYZWJQEee0epbhyPnLeg" selectedElement="_7UVYZmJQEee0epbhyPnLeg" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_7UVYZmJQEee0epbhyPnLeg" containerData="4000" selectedElement="_7UVYZ2JQEee0epbhyPnLeg" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_7UVYZ2JQEee0epbhyPnLeg" containerData="3000" selectedElement="_7UVYaGJQEee0epbhyPnLeg">
+                <children xsi:type="basic:PartStack" xmi:id="_7UVYaGJQEee0epbhyPnLeg" elementId="Links.folder" containerData="7000" selectedElement="_7UVYaWJQEee0epbhyPnLeg">
+                  <tags>active</tags>
+                  <tags>noFocus</tags>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7UVYaWJQEee0epbhyPnLeg" elementId="ch.elexis.PatListView" ref="_7UVYsGJQEee0epbhyPnLeg"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7UVYamJQEee0epbhyPnLeg" elementId="ch.elexis.PatHeuteView" ref="_7UVYw2JQEee0epbhyPnLeg"/>
+                </children>
+                <children xsi:type="basic:PartStack" xmi:id="_7UVYa2JQEee0epbhyPnLeg" elementId="links.unten" containerData="3000" selectedElement="_7UVYbGJQEee0epbhyPnLeg">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7UVYbGJQEee0epbhyPnLeg" elementId="ch.elexis.schoebufaelle" ref="_7UVYvGJQEee0epbhyPnLeg"/>
+                </children>
+              </children>
+              <children xsi:type="basic:PartSashContainer" xmi:id="_7UVYbWJQEee0epbhyPnLeg" containerData="7000" horizontal="true">
+                <children xsi:type="basic:PartStack" xmi:id="_7UVYbmJQEee0epbhyPnLeg" elementId="Haupt.Folder" containerData="7000" selectedElement="_7UVYb2JQEee0epbhyPnLeg">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7UVYb2JQEee0epbhyPnLeg" elementId="ch.elexis.PatDetail_v2" ref="_7UVYo2JQEee0epbhyPnLeg"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7UVYcGJQEee0epbhyPnLeg" elementId="ch.elexis.Konsdetail" ref="_7UVYxGJQEee0epbhyPnLeg"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7UVYcWJQEee0epbhyPnLeg" elementId="ch.elexis.Labor" ref="_7UVYxWJQEee0epbhyPnLeg"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7UVYcmJQEee0epbhyPnLeg" elementId="ch.elexis.Rezepte" ref="_7UVYxmJQEee0epbhyPnLeg"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7UVYc2JQEee0epbhyPnLeg" elementId="ch.elexis.auf" ref="_7UVYx2JQEee0epbhyPnLeg"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7UVYdGJQEee0epbhyPnLeg" elementId="ch.elexis.FallDetailView" toBeRendered="false" ref="_7UVYzWJQEee0epbhyPnLeg"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7UVYdWJQEee0epbhyPnLeg" elementId="ch.elexis.TextView" toBeRendered="false" ref="_7UVYzmJQEee0epbhyPnLeg"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7UVYdmJQEee0epbhyPnLeg" elementId="ch.elexis.Kompendium" toBeRendered="false" ref="_7UVYz2JQEee0epbhyPnLeg"/>
+                </children>
+                <children xsi:type="basic:PartStack" xmi:id="_7UVYd2JQEee0epbhyPnLeg" elementId="Rechts.folder" containerData="3000" selectedElement="_7UVYeGJQEee0epbhyPnLeg">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7UVYeGJQEee0epbhyPnLeg" elementId="ch.elexis.HistoryView" ref="_7UVYyGJQEee0epbhyPnLeg"/>
+                </children>
+              </children>
+            </children>
+            <children xsi:type="advanced:Placeholder" xmi:id="_7UVYeWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.editorss" toBeRendered="false" containerData="6000" ref="_7UVYoWJQEee0epbhyPnLeg"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="basic:PartStack" xmi:id="_7UVYemJQEee0epbhyPnLeg" elementId="stickyFolderRight" toBeRendered="false" containerData="2500">
+        <children xsi:type="advanced:Placeholder" xmi:id="_7UVYe2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.internal.introview" toBeRendered="false" ref="_7UVYoGJQEee0epbhyPnLeg"/>
+      </children>
+    </children>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYoGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.internal.introview" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Welcome" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.ViewIntroAdapterPart"/>
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui"/>
+      <tags>View</tags>
+      <tags>categoryTag:General</tags>
+    </sharedElements>
+    <sharedElements xsi:type="advanced:Area" xmi:id="_7UVYoWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.editorss">
+      <children xsi:type="basic:PartStack" xmi:id="_7UVYomJQEee0epbhyPnLeg" elementId="org.eclipse.e4.primaryDataStack">
+        <tags>org.eclipse.e4.primaryDataStack</tags>
+        <tags>EditorStack</tags>
+      </children>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYo2JQEee0epbhyPnLeg" elementId="ch.elexis.PatDetail_v2" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Patient Detail" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/person.ico" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.contacts.views.PatientDetailView2"/>
+      <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Daten</tags>
+      <menus xmi:id="_7UVYpGJQEee0epbhyPnLeg" elementId="ch.elexis.PatDetail_v2">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_7UVYrGJQEee0epbhyPnLeg" elementId="ch.elexis.PatDetail_v2"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYsGJQEee0epbhyPnLeg" elementId="ch.elexis.PatListView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Patienten" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/group.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.contacts.views.PatientenListeView"/>
+      <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Daten</tags>
+      <tags>active</tags>
+      <menus xmi:id="_7UVYsWJQEee0epbhyPnLeg" elementId="ch.elexis.PatListView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_7UVYtmJQEee0epbhyPnLeg" elementId="ch.elexis.PatListView">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:ch.elexis.PatListView</tags>
+      </menus>
+      <toolbar xmi:id="_7UVYt2JQEee0epbhyPnLeg" elementId="ch.elexis.PatListView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYvGJQEee0epbhyPnLeg" elementId="ch.elexis.schoebufaelle" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="F&#xe4;lle" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/documents_stack.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.FaelleView"/>
+      <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Konsultation</tags>
+      <menus xmi:id="_7UVYvWJQEee0epbhyPnLeg" elementId="ch.elexis.schoebufaelle">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_7UVYvmJQEee0epbhyPnLeg" elementId="ch.elexis.schoebufaelle">
+        <tags>menuContribution:popup</tags>
+        <tags>popup:ch.elexis.schoebufaelle</tags>
+      </menus>
+      <toolbar xmi:id="_7UVYv2JQEee0epbhyPnLeg" elementId="ch.elexis.schoebufaelle"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYw2JQEee0epbhyPnLeg" elementId="ch.elexis.PatHeuteView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Kons. nach Datum" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/calendar_view_day.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.PatHeuteView"/>
+      <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+      <tags>View</tags>
+      <tags>categoryTag:Konsultation</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYxGJQEee0epbhyPnLeg" elementId="ch.elexis.Konsdetail" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Konsultation" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/consult_view.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.KonsDetailView"/>
+      <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+      <tags>View</tags>
+      <tags>categoryTag:Konsultation</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYxWJQEee0epbhyPnLeg" elementId="ch.elexis.Labor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Labor" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/labor_view.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.laboratory.views.LaborView"/>
+      <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+      <tags>View</tags>
+      <tags>categoryTag:Messungen</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYxmJQEee0epbhyPnLeg" elementId="ch.elexis.Rezepte" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Rezepte" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/rezept_view.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.RezepteView"/>
+      <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+      <tags>View</tags>
+      <tags>categoryTag:Konsultation</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYx2JQEee0epbhyPnLeg" elementId="ch.elexis.auf" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="AUF" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/auf.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.AUF2"/>
+      <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+      <tags>View</tags>
+      <tags>categoryTag:Konsultation</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYyGJQEee0epbhyPnLeg" elementId="ch.elexis.HistoryView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Verlauf" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/book_open_view.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.KonsListe"/>
+      <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Konsultation</tags>
+      <menus xmi:id="_7UVYyWJQEee0epbhyPnLeg" elementId="ch.elexis.HistoryView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_7UVYymJQEee0epbhyPnLeg" elementId="ch.elexis.HistoryView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYzWJQEee0epbhyPnLeg" elementId="ch.elexis.FallDetailView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Fall" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.FallDetailView"/>
+      <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+      <tags>View</tags>
+      <tags>categoryTag:Daten</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYzmJQEee0epbhyPnLeg" elementId="ch.elexis.TextView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Briefe" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/dokument.gif" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.TextView"/>
+      <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+      <tags>View</tags>
+      <tags>categoryTag:Dokumente</tags>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7UVYz2JQEee0epbhyPnLeg" elementId="ch.elexis.Kompendium" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Kompendium online" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/information.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.KompendiumView"/>
+      <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+      <tags>View</tags>
+      <tags>categoryTag:Daten</tags>
+    </sharedElements>
+    <trimBars xmi:id="_7UVY0GJQEee0epbhyPnLeg" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.ui.workbench">
+      <children xsi:type="menu:ToolBar" xmi:id="_7UVY0WJQEee0epbhyPnLeg">
+        <tags>Draggable</tags>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY0mJQEee0epbhyPnLeg" elementId="home">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY02JQEee0epbhyPnLeg" elementId="resetPerspective">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY1GJQEee0epbhyPnLeg">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY1WJQEee0epbhyPnLeg">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY1mJQEee0epbhyPnLeg">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY12JQEee0epbhyPnLeg">
+          <tags>Opaque</tags>
+        </children>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_7UVY2GJQEee0epbhyPnLeg">
+        <tags>Draggable</tags>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY2WJQEee0epbhyPnLeg" elementId="ch.elexis.PatientPerspective">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY2mJQEee0epbhyPnLeg" elementId="ch.elexis.BriefePerspektive">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY22JQEee0epbhyPnLeg" elementId="ch.elexis.LeistungPerspektive">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY3GJQEee0epbhyPnLeg" elementId="ch.elexis.ArtikelPerspektive">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY3WJQEee0epbhyPnLeg" elementId="ch.elexis.ReminderPerspektive">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY3mJQEee0epbhyPnLeg" elementId="ch.elexis.AbrechnungPerspektive">
+          <tags>Opaque</tags>
+        </children>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_7UVY32JQEee0epbhyPnLeg" elementId="ch.elexis.AdressPerspektive">
+          <tags>Opaque</tags>
+        </children>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_7UVY5mJQEee0epbhyPnLeg" elementId="additions" toBeRendered="false">
+        <tags>toolbarSeparator</tags>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_7UVY52JQEee0epbhyPnLeg" elementId="additions" toBeRendered="false"/>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_7UVY6GJQEee0epbhyPnLeg" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+        <tags>stretch</tags>
+        <tags>SHOW_RESTORE_MENU</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_7UVY6WJQEee0epbhyPnLeg" elementId="PerspectiveSwitcher" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.e4.ui.workbench.addons.perspectiveswitcher.PerspectiveSwitcher">
+        <tags>Draggable</tags>
+        <tags>HIDEABLE</tags>
+        <tags>SHOW_RESTORE_MENU</tags>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_7UVY6mJQEee0epbhyPnLeg" elementId="org.eclipse.ui.trim.status" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Bottom">
+      <children xsi:type="menu:ToolControl" xmi:id="_7UVY7mJQEee0epbhyPnLeg" elementId="org.eclipse.ui.StatusLine" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.StandardTrim">
+        <tags>stretch</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_7UVY72JQEee0epbhyPnLeg" elementId="org.eclipse.ui.HeapStatus" toBeRendered="false" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.StandardTrim">
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_7UVY8GJQEee0epbhyPnLeg" elementId="org.eclipse.ui.ProgressBar" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.StandardTrim">
+        <tags>Draggable</tags>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_7UVY8WJQEee0epbhyPnLeg" elementId="org.eclipse.ui.trim.vertical1" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Left"/>
+    <trimBars xmi:id="_7UVY8mJQEee0epbhyPnLeg" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Right"/>
+  </children>
+  <bindingTables xmi:id="_7UVY82JQEee0epbhyPnLeg" contributorURI="platform:/plugin/org.eclipse.ui.workbench" bindingContext="_7UVZL2JQEee0epbhyPnLeg">
+    <bindings xmi:id="_7UVY9GJQEee0epbhyPnLeg" keySequence="CTRL+V" command="_7UVaomJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVY9WJQEee0epbhyPnLeg" keySequence="CTRL+Z" command="_7UValmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVY9mJQEee0epbhyPnLeg" keySequence="CTRL+Y" command="_7UVauWJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVY92JQEee0epbhyPnLeg" keySequence="CTRL+INSERT" command="_7UVaRWJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVY-GJQEee0epbhyPnLeg" keySequence="CTRL+X" command="_7UVanmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVY-WJQEee0epbhyPnLeg" keySequence="CTRL+F10" command="_7UVa3GJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVY-mJQEee0epbhyPnLeg" keySequence="CTRL+A" command="_7UVaeWJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVY-2JQEee0epbhyPnLeg" keySequence="CTRL+C" command="_7UVaRWJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVY_GJQEee0epbhyPnLeg" keySequence="ALT+PAGE_DOWN" command="_7UVakmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVY_WJQEee0epbhyPnLeg" keySequence="SHIFT+INSERT" command="_7UVaomJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVY_mJQEee0epbhyPnLeg" keySequence="ALT+PAGE_UP" command="_7UVazmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVY_2JQEee0epbhyPnLeg" keySequence="SHIFT+DEL" command="_7UVanmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZAGJQEee0epbhyPnLeg" keySequence="CTRL+SPACE" command="_7UVaa2JQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZAWJQEee0epbhyPnLeg" keySequence="CTRL+SHIFT+SPACE" command="_7UVaTmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+  </bindingTables>
+  <bindingTables xmi:id="_7UVZAmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.contexts.window" bindingContext="_7UVZMGJQEee0epbhyPnLeg">
+    <bindings xmi:id="_7UVZA2JQEee0epbhyPnLeg" keySequence="CTRL+ARROW_UP" command="_7UVaoGJQEee0epbhyPnLeg">
+      <parameters xmi:id="_7UVZBGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.sortmove.direction" name="ch.elexis.core.ui.medication.sortmove.direction" value="up"/>
+    </bindings>
+    <bindings xmi:id="_7UVZBWJQEee0epbhyPnLeg" keySequence="CTRL+," command="_7UVarmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZBmJQEee0epbhyPnLeg" keySequence="CTRL+1" command="_7UVa1WJQEee0epbhyPnLeg"/>
+    <bindings xmi:id="_7UVZB2JQEee0epbhyPnLeg" keySequence="CTRL+SHIFT+W" command="_7UVanWJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZCGJQEee0epbhyPnLeg" keySequence="F1" command="_7UVavGJQEee0epbhyPnLeg"/>
+    <bindings xmi:id="_7UVZCWJQEee0epbhyPnLeg" keySequence="ALT+CR" command="_7UVaNWJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZCmJQEee0epbhyPnLeg" keySequence="CTRL+F8" command="_7UVa52JQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZC2JQEee0epbhyPnLeg" keySequence="CTRL+SHIFT+S" command="_7UVaMWJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZDGJQEee0epbhyPnLeg" keySequence="CTRL+P" command="_7UVaumJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZDWJQEee0epbhyPnLeg" keySequence="CTRL+SHIFT+F8" command="_7UVaV2JQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZDmJQEee0epbhyPnLeg" keySequence="CTRL+SHIFT+L" command="_7UVaMmJQEee0epbhyPnLeg"/>
+    <bindings xmi:id="_7UVZD2JQEee0epbhyPnLeg" keySequence="ALT+F7" command="_7UVao2JQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZEGJQEee0epbhyPnLeg" keySequence="CTRL+S" command="_7UVaN2JQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZEWJQEee0epbhyPnLeg" keySequence="CTRL+M" command="_7UVaYmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZEmJQEee0epbhyPnLeg" keySequence="CTRL+F4" command="_7UVaxmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZE2JQEee0epbhyPnLeg" keySequence="CTRL+F7" command="_7UVaRmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZFGJQEee0epbhyPnLeg" keySequence="CTRL+SHIFT+F7" command="_7UVab2JQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZFWJQEee0epbhyPnLeg" keySequence="CTRL+W" command="_7UVaxmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZFmJQEee0epbhyPnLeg" keySequence="CTRL+SHIFT+F4" command="_7UVanWJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZF2JQEee0epbhyPnLeg" keySequence="F5" command="_7UVa5GJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZGGJQEee0epbhyPnLeg" keySequence="CTRL+." command="_7UVaqmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZGWJQEee0epbhyPnLeg" keySequence="CTRL+SHIFT+NUMPAD_MULTIPLY" command="_7UVaL2JQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZGmJQEee0epbhyPnLeg" keySequence="ALT+SHIFT+F7" command="_7UVapGJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZG2JQEee0epbhyPnLeg" keySequence="CTRL+SHIFT+NUMPAD_DIVIDE" command="_7UVaXWJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZHGJQEee0epbhyPnLeg" keySequence="ALT+-" command="_7UVabmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZHWJQEee0epbhyPnLeg" keySequence="CTRL+SHIFT+F6" command="_7UVaO2JQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZHmJQEee0epbhyPnLeg" keySequence="CTRL+F6" command="_7UVaU2JQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZH2JQEee0epbhyPnLeg" keySequence="CTRL+{" command="_7UVaWGJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+      <parameters xmi:id="_7UVZIGJQEee0epbhyPnLeg" elementId="Splitter.isHorizontal" name="Splitter.isHorizontal" value="false"/>
+    </bindings>
+    <bindings xmi:id="_7UVZIWJQEee0epbhyPnLeg" keySequence="CTRL+N" command="_7UVadGJQEee0epbhyPnLeg"/>
+    <bindings xmi:id="_7UVZImJQEee0epbhyPnLeg" keySequence="CTRL+N" command="_7UVavmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZI2JQEee0epbhyPnLeg" keySequence="F2" command="_7UVar2JQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZJGJQEee0epbhyPnLeg" keySequence="DEL" command="_7UVaW2JQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZJWJQEee0epbhyPnLeg" keySequence="F12" command="_7UVabWJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZJmJQEee0epbhyPnLeg" keySequence="CTRL+ARROW_DOWN" command="_7UVaoGJQEee0epbhyPnLeg">
+      <parameters xmi:id="_7UVZJ2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.sortmove.direction" name="ch.elexis.core.ui.medication.sortmove.direction" value="down"/>
+    </bindings>
+    <bindings xmi:id="_7UVZKGJQEee0epbhyPnLeg" keySequence="ALT+ARROW_RIGHT" command="_7UVawmJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZKWJQEee0epbhyPnLeg" keySequence="ALT+ARROW_LEFT" command="_7UVa4GJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZKmJQEee0epbhyPnLeg" keySequence="CTRL+F" command="_7UVaQ2JQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZK2JQEee0epbhyPnLeg" keySequence="CTRL+SHIFT+E" command="_7UVakGJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZLGJQEee0epbhyPnLeg" keySequence="CTRL+E" command="_7UVajWJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+    </bindings>
+    <bindings xmi:id="_7UVZLWJQEee0epbhyPnLeg" keySequence="CTRL+_" command="_7UVaWGJQEee0epbhyPnLeg">
+      <tags>schemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+      <parameters xmi:id="_7UVZLmJQEee0epbhyPnLeg" elementId="Splitter.isHorizontal" name="Splitter.isHorizontal" value="true"/>
+    </bindings>
+  </bindingTables>
+  <rootContext xmi:id="_7UVZL2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="In Dialogs and Windows" description="Either a dialog or a window is open">
+    <children xmi:id="_7UVZMGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="In Windows" description="A window is open">
+      <children xmi:id="_7UVZMWJQEee0epbhyPnLeg" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="%bindingcontext.name.bindingView"/>
+      <children xmi:id="_7UVZMmJQEee0epbhyPnLeg" elementId="ch.elexis.context.billing" name="billing" description="context for billing"/>
+      <children xmi:id="_7UVZM2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.textEditorScope" name="Editing Text" description="Editing Text Context"/>
+    </children>
+    <children xmi:id="_7UVZNGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.contexts.dialog" contributorURI="platform:/plugin/org.eclipse.ui.workbench" name="In Dialogs" description="A dialog is open"/>
+  </rootContext>
+  <rootContext xmi:id="_7UVZNWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.contexts.workbenchMenu" name="Workbench Menu" description="When no Workbench windows are active"/>
+  <rootContext xmi:id="_7UVZNmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.contexts.actionSet" name="Action Set" description="Parent context for action sets"/>
+  <descriptors xmi:id="_7UVZN2JQEee0epbhyPnLeg" elementId="org.eclipse.e4.ui.compatibility.editor" allowMultiple="true" category="org.eclipse.e4.primaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor">
+    <tags>Editor</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZOGJQEee0epbhyPnLeg" elementId="ch.elexis.arzttarife_ch.printview2" label="Rechnung Drucken" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Abrechnung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.views.RnPrintView2"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.base.ch.arzttarife"/>
+    <tags>View</tags>
+    <tags>categoryTag:Abrechnung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZOWJQEee0epbhyPnLeg" elementId="ch.elexis.arzttarife_ch.rfeView" label="medkey-RFE" iconURI="platform:/plugin/ch.elexis.base.ch.arzttarife/rsc/RFE.ico" tooltip="" category="Konsultation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.views.RFEView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.base.ch.arzttarife"/>
+    <tags>View</tags>
+    <tags>categoryTag:Konsultation</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZOmJQEee0epbhyPnLeg" elementId="elexis-ebanking-schweiz.ESRView" label="ESR (old)" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Abrechnung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.base.ch.ebanking.esr.ESRView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.base.ch.ebanking"/>
+    <tags>View</tags>
+    <tags>categoryTag:Abrechnung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZO2JQEee0epbhyPnLeg" elementId="ch.elexis.banking.ESRView2" label="ESR Tabelle (old)" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Abrechnung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.base.ch.ebanking.esr.ESRView2"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.base.ch.ebanking"/>
+    <tags>View</tags>
+    <tags>categoryTag:Abrechnung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZPGJQEee0epbhyPnLeg" elementId="ch.elexis.ebanking_ch.ESRView" label="ESR" iconURI="platform:/plugin/ch.elexis.base.ch.ebanking/rsc/postfinance.ico" tooltip="" category="Abrechnung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.base.ch.ebanking.ESRView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.base.ch.ebanking"/>
+    <tags>View</tags>
+    <tags>categoryTag:Abrechnung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZPWJQEee0epbhyPnLeg" elementId="ch.elexis.views.TemplatePrintView" label="Vorlage Drucken" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/printer.png" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.TemplatePrintView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZPmJQEee0epbhyPnLeg" elementId="ch.elexis.FallListeView" label="F&#xe4;lle und Kons" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/documents_stack.png" tooltip="" category="Konsultation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.FallListeView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Konsultation</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZP2JQEee0epbhyPnLeg" elementId="ch.elexis.Labor" label="Labor" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/labor_view.png" tooltip="" category="Messungen" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.laboratory.views.LaborView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Messungen</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZQGJQEee0epbhyPnLeg" elementId="ch.elexis.Rezepte" label="Rezepte" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/rezept_view.png" tooltip="" category="Konsultation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.RezepteView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Konsultation</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZQWJQEee0epbhyPnLeg" elementId="ch.elexis.PatListView" label="Patienten" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/group.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.contacts.views.PatientenListeView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZQmJQEee0epbhyPnLeg" elementId="ch.elexis.Kompendium" label="Kompendium online" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/information.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.KompendiumView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZQ2JQEee0epbhyPnLeg" elementId="ch.elexis.BehandlungenVerrechnenView" label="Konsultationen zum Verrechnen" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/page_red.png" tooltip="" category="Abrechnung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.rechnung.KonsZumVerrechnenView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Abrechnung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZRGJQEee0epbhyPnLeg" elementId="ch.elexis.LeistungenView" label="Leistungen" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/leistung.png" tooltip="" category="Abrechnung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.codesystems.LeistungenView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Abrechnung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZRWJQEee0epbhyPnLeg" elementId="ch.elexis.BBSView" label="Schwarzes Brett" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/tafel.jpg" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.BBSView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZRmJQEee0epbhyPnLeg" elementId="ch.elexis.ArtikelDetail" label="Artikeldetail" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.artikel.Artikeldetail"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZR2JQEee0epbhyPnLeg" elementId="ch.elexis.FallDetailView" label="Fall" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.FallDetailView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZSGJQEee0epbhyPnLeg" elementId="ch.elexis.BriefAuswahlView" label="Briefauswahl" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/mail.png" tooltip="" category="Dokumente" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.BriefAuswahl"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Dokumente</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZSWJQEee0epbhyPnLeg" elementId="ch.elexis.Konsdetail" label="Konsultation" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/consult_view.png" tooltip="" category="Konsultation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.KonsDetailView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Konsultation</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZSmJQEee0epbhyPnLeg" elementId="ch.elexis.DiagnosenView" label="Diagnosen" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/stethoskop.gif" tooltip="" category="Konsultation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.codesystems.DiagnosenView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Konsultation</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZS2JQEee0epbhyPnLeg" elementId="ch.elexis.TextView" label="Briefe" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/dokument.gif" tooltip="" allowMultiple="true" category="Dokumente" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.TextView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Dokumente</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZTGJQEee0epbhyPnLeg" elementId="ch.elexis.codedetailview" label="Codes" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/report.png" tooltip="" category="Codes" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.codesystems.CodeDetailView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Codes</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZTWJQEee0epbhyPnLeg" elementId="ch.elexis.Laborblatt" label="Laborblatt" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/printer.png" tooltip="" category="Dokumente" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.laboratory.views.LaborblattView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Dokumente</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZTmJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.laboratory.LabOrderView" label="Labor Verordnungen" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/printer.png" tooltip="" category="Dokumente" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.laboratory.views.LabOrderView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Dokumente</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZT2JQEee0epbhyPnLeg" elementId="ch.elexis.AUFView" label="AUF-Zeugnis" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/printer.png" tooltip="" category="Dokumente" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.AUFZeugnis"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Dokumente</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZUGJQEee0epbhyPnLeg" elementId="ch.elexis.RezeptBlatt" label="Rezept" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/printer.png" tooltip="" category="Dokumente" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.RezeptBlatt"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Dokumente</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZUWJQEee0epbhyPnLeg" elementId="ch.elexis.PatHeuteView" label="Kons. nach Datum" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/calendar_view_day.png" tooltip="" category="Konsultation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.PatHeuteView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Konsultation</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZUmJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.views.StockView" label="Lager" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/box_label.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.StockView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZU2JQEee0epbhyPnLeg" elementId="ch.elexis.BestellenView" label="Bestellung" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/cart.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.BestellView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZVGJQEee0epbhyPnLeg" elementId="ch.elexis.artikelview" label="Artikel" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/pill.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.artikel.ArtikelView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZVWJQEee0epbhyPnLeg" elementId="ch.elexis.ArtikelSelektor" label="Artikelauswahl" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.artikel.ArtikelSelektor"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZVmJQEee0epbhyPnLeg" elementId="ch.elexis.BestellBlatt" label="Bestellblatt" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/printer.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.BestellBlatt"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZV2JQEee0epbhyPnLeg" elementId="ch.elexis.HistoryView" label="Verlauf" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/book_open_view.png" tooltip="" category="Konsultation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.KonsListe"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Konsultation</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZWGJQEee0epbhyPnLeg" elementId="ch.elexis.views.KGPrintView" label="KG Drucken" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Dokumente" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.KGPrintView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Dokumente</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZWWJQEee0epbhyPnLeg" elementId="ch.elexis.auf" label="AUF" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/auf.png" tooltip="" category="Konsultation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.AUF2"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Konsultation</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZWmJQEee0epbhyPnLeg" elementId="ch.elexis.RechnungsDetailView" label="Rechnungsdetail" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/page_green.png" tooltip="" category="Abrechnung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.rechnung.RnDetailView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Abrechnung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZW2JQEee0epbhyPnLeg" elementId="ch.elexis.RechnungsListeView" label="Rechnungsliste" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/page_copy.png" tooltip="" category="Abrechnung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.rechnung.RechnungsListeView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Abrechnung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZXGJQEee0epbhyPnLeg" elementId="ch.elexis.dauermedikationview" label="Fixmedikation" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/pill.png" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.medication.views.DauerMediView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZXWJQEee0epbhyPnLeg" elementId="ch.elexis.schoebufaelle" label="F&#xe4;lle" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/documents_stack.png" tooltip="" category="Konsultation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.FaelleView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Konsultation</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZXmJQEee0epbhyPnLeg" elementId="ch.elexis.reminderview" label="Pendenzen" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/bell__exclamation.png" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.ReminderView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZX2JQEee0epbhyPnLeg" elementId="ch.elexis.views.rechnung.AccountView" label="Konto" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/money.png" tooltip="" category="Abrechnung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.rechnung.AccountView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Abrechnung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZYGJQEee0epbhyPnLeg" elementId="ch.elexis.views.rechnung.AccountListView" label="Konto-Liste" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/money.png" tooltip="" category="Abrechnung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.rechnung.AccountListView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Abrechnung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZYWJQEee0epbhyPnLeg" elementId="ch.elexis.views.SearchView" label="Suchen" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.SearchView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZYmJQEee0epbhyPnLeg" elementId="ch.elexis.dbfielddisplay" label="Datenanzeige" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/daten.gif" tooltip="" allowMultiple="true" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.FieldDisplayView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZY2JQEee0epbhyPnLeg" elementId="ch.elexis.ODDBView" label="Open Drug Database" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.ODDBView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZZGJQEee0epbhyPnLeg" elementId="ch.elexis.medverlaufview" label="Medikamente-Verlauf" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.MediVerlaufView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZZWJQEee0epbhyPnLeg" elementId="ch.elexis.LabNotSeenView" label="Labor neu" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/reagensask.ico" tooltip="" category="Messungen" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.laboratory.views.LabNotSeenView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Messungen</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZZmJQEee0epbhyPnLeg" elementId="ch.elexis.views.rechnung.BillSummary" label="Rechnungs&#xfc;bersicht" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/rechnungen.ico" tooltip="" category="Abrechnung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.rechnung.BillSummary"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Abrechnung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZZ2JQEee0epbhyPnLeg" elementId="ch.elexis.views.textsystem.Platzhalterview" label="Platzhalter" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/platzhalter.gif" tooltip="" allowMultiple="true" category="Dokumente" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.textsystem.PlatzhalterView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Dokumente</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZaGJQEee0epbhyPnLeg" elementId="ch.elexis.PatientDetailView" label="Patient Detail" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/person.ico" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.contacts.views.PatientDetailView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZaWJQEee0epbhyPnLeg" elementId="ch.elexis.PatDetail_v2" label="Patient Detail neu" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/person.ico" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.contacts.views.PatientDetailView2"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZamJQEee0epbhyPnLeg" elementId="ch.elexis.scriptsView" label="Script" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/script_code.png" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.ScriptView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZa2JQEee0epbhyPnLeg" elementId="ch.elexis.views.textsystem.TextTemplateView" label="Textvorlagen Management" iconURI="icon://IMG_DOC_STAND" tooltip="" category="Dokumente" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.textsystem.TextTemplateView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Dokumente</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZbGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.views.rechnung.BillingProposalView" label="Rechnungs-Vorschlag" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/page_red.png" tooltip="" category="Abrechnung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.rechnung.BillingProposalView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Abrechnung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZbWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.views.rechnung.InvoiceListView" label="Rechnungsliste (beta)" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/page_copy.png" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.views.rechnung.InvoiceListView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.application"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZbmJQEee0epbhyPnLeg" elementId="ch.elexis.Kontakte" label="Kontakte" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/kontakte_view.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.contacts.views.KontakteView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.ui.contacts"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZb2JQEee0epbhyPnLeg" elementId="ch.elexis.KontaktDetailView" label="Details zum Kontakt" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/kontaktdetail_view.png" tooltip="" category="Daten" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.contacts.views.KontaktDetailView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.ui.contacts"/>
+    <tags>View</tags>
+    <tags>categoryTag:Daten</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZcGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.contacts.views.ContactSelectorView" label="Kontakte" iconURI="icon://IMG_GROUP" tooltip="" category="Kontaktverwaltung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.contacts.views.ContactSelectorView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.ui.contacts"/>
+    <tags>View</tags>
+    <tags>categoryTag:Kontaktverwaltung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZcWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.contacts.views.ContactPropertiesView" label="Kontakt Eigenschaften" iconURI="icon://IMG_CONTACT_DETAIL" tooltip="This adapted property view only listens to selections made within the Kontakte view." category="Kontaktverwaltung" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.contacts.views.ContactPropertiesView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.ui.contacts"/>
+    <tags>View</tags>
+    <tags>categoryTag:Kontaktverwaltung</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZcmJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.documents.views.DocumentsView" label="Dokumente" iconURI="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/dokument.gif" tooltip="" category="Dokumente" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.documents.views.DocumentsView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.ui.documents"/>
+    <tags>View</tags>
+    <tags>categoryTag:Dokumente</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZc2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.views.MedicationView" label="Medikationsliste" iconURI="icon://IMG_PILL" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.core.ui.medication.views.MedicationView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.core.ui.medication"/>
+    <tags>View</tags>
+    <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZdGJQEee0epbhyPnLeg" elementId="ch.elexis.omnivore.views.OmnivoreView" label="Omnivore" iconURI="platform:/plugin/ch.elexis.omnivore.ui/icons/fressen.gif" tooltip="" category="Omnivore" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="ch.elexis.omnivore.ui.views.OmnivoreView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="ch.elexis.omnivore.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Omnivore</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZdWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.internal.introview" label="Welcome" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.ViewIntroAdapterPart"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZdmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.browser.view" label="Internal Web Browser" iconURI="platform:/plugin/org.eclipse.ui.browser/icons/obj16/internal_browser.png" tooltip="" allowMultiple="true" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.browser.WebBrowserView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.browser"/>
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZd2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.views.PropertySheet" label="Properties" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview16/prop_ps.png" tooltip="" allowMultiple="true" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.views.properties.PropertySheet"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.views"/>
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZeGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.views.ContentOutline" label="Outline" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview16/outline_co.png" tooltip="" category="General" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.views.contentoutline.ContentOutline"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.views"/>
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <descriptors xmi:id="_7UVZeWJQEee0epbhyPnLeg" elementId="org.iatrix.help.wiki.views.WikiView" label="Iatrix Hilfe" iconURI="platform:/plugin/org.iatrix.help.wiki/icons/help.gif" tooltip="" category="Iatrix Hilfe" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.iatrix.help.wiki.views.WikiView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.iatrix.help.wiki"/>
+    <tags>View</tags>
+    <tags>categoryTag:Iatrix Hilfe</tags>
+  </descriptors>
+  <commands xmi:id="_7UVaJmJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.BillingProposalViewRemove" commandName="Remove from proposal" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaJ2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.pinEditor" commandName="Pin Editor" description="Pin the current editor" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaKGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.nextTab" commandName="Next Tab" description="Switch to the next tab" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaKWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.quickAccess" commandName="Quick Access" description="Quickly access UI elements" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaKmJQEee0epbhyPnLeg" elementId="at.medevit.elexis.contacts.core.command.SetContactSorter" commandName="set contact sorter" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaK2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.p2.command.install" commandName="Neue Software installieren" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaLGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.commands.import" commandName="import" category="_7UVbB2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaLWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.locks.LockStatusDialog" commandName="Show overall lock status" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaLmJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.startEditLocalDocument" commandName="Start edit local document" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaL2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.expandAll" commandName="Expand All" description="Expand the current tree" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaMGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.PrintTakingsListMenu" commandName="Einnahmeliste" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaMWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.saveAll" commandName="Save All" description="Save all current contents" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaMmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.showKeyAssist" commandName="Show Key Assist" description="Show the key assist dialog" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaM2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.StartBillingProposal" commandName="Start billing proposal" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaNGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.documents.commandCreate" commandName="Create Dokument" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaNWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.properties" commandName="Properties" description="Display the properties of the selected item" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaNmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.closeOthers" commandName="Close Others" description="Close all editors except the one that is active" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaN2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.save" commandName="Save" description="Save the current contents" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaOGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.preferences" commandName="Preferences" description="Open the preferences dialog" category="_7UVbBGJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVaOWJQEee0epbhyPnLeg" elementId="preferencePageId" name="Preference Page"/>
+  </commands>
+  <commands xmi:id="_7UVaOmJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.commands.login" commandName="login" category="_7UVbB2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaO2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.previousEditor" commandName="Previous Editor" description="Switch to the previous editor" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaPGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.ToggleCurrentPatientLockCommand" commandName="Toggle current patient lock" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaPWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.browser.openBrowser" commandName="Open Browser" description="Opens the default web browser." category="_7UVbBGJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVaPmJQEee0epbhyPnLeg" elementId="url" name="URL"/>
+    <parameters xmi:id="_7UVaP2JQEee0epbhyPnLeg" elementId="browserId" name="Browser Id"/>
+    <parameters xmi:id="_7UVaQGJQEee0epbhyPnLeg" elementId="name" name="Browser Name"/>
+    <parameters xmi:id="_7UVaQWJQEee0epbhyPnLeg" elementId="tooltip" name="Browser Tooltip"/>
+  </commands>
+  <commands xmi:id="_7UVaQmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.activeContextInfo" commandName="Show activeContext Info" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaQ2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.findReplace" commandName="Find and Replace" description="Find and replace text" category="_7UVbAGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaRGJQEee0epbhyPnLeg" elementId="serviceblocks.export" commandName="Leistungsbl&#xf6;cke exportieren" description="Leistungsbl&#xf6;cke exportieren" category="_7UVbB2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaRWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.copy" commandName="Copy" description="Copy the selection to the clipboard" category="_7UVbAGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaRmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.nextView" commandName="Next View" description="Switch to the next view" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaR2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.deleteTemplate" commandName="Vorlage l&#xf6;schen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaSGJQEee0epbhyPnLeg" elementId="ch.elexis.eigenartikel.edit" commandName="Eigenartikel &#xc4;ndern" category="_7UVbBWJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVaSWJQEee0epbhyPnLeg" elementId="ch.elexis.eigenartikel.edit.selected" name="Selected Eigenartikel" typeId="ch.elexis.PersistentObjectType"/>
+  </commands>
+  <commands xmi:id="_7UVaSmJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.documents.send" commandName="send" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaS2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.createMandantTemplate" commandName="Personalisierte Vorlage" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaTGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.documents.commandUpdate" commandName="Update Document" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaTWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.help.tipsAndTricksAction" commandName="Tips and Tricks" description="Open the tips and tricks help page" category="_7UVbBmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaTmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.text.contentAssist.contextInformation" commandName="Context Information" description="Show Context Information" category="_7UVbAGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaT2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.fullscreenmode" commandName="Toggle Full Screen" description="Toggles the window between full screen and normal" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaUGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.views.properties.NewPropertySheetCommand" commandName="Properties" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaUWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.documents.commandExport" commandName="Export Dokument" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaUmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.saveAs" commandName="Save As" description="Save the current contents to another location" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaU2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.nextEditor" commandName="Next Editor" description="Switch to the next editor" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaVGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.BillingProposalViewCreateBills" commandName="Create bills from proposal" category="_7UVbBWJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVaVWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.BillingProposalViewCreateBills.selection" name="selection"/>
+  </commands>
+  <commands xmi:id="_7UVaVmJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.SetAsReserveMedication" commandName="Reserve Medikation" description="Reserve Medikation" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaV2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.previousPerspective" commandName="Previous Perspective" description="Switch to the previous perspective" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaWGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.splitEditor" commandName="Toggle Split Editor" description="Split or join the currently active editor." category="_7UVbBGJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVaWWJQEee0epbhyPnLeg" elementId="Splitter.isHorizontal" name="Orientation" optional="false"/>
+  </commands>
+  <commands xmi:id="_7UVaWmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.help.helpContents" commandName="Help Contents" description="Open the help contents" category="_7UVbBmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaW2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.delete" commandName="Delete" description="Delete the selection" category="_7UVbAGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaXGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.MentionInConsultation" commandName="Vermerk in Konsultation" description="Vermerk in Konsultation erstellen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaXWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.collapseAll" commandName="Collapse All" description="Collapse the current tree" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaXmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.goInto" commandName="Go Into" description="Navigate into the selected item" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaX2JQEee0epbhyPnLeg" elementId="ch.elexis.core.command.copyFall" commandName="Fall kopieren" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaYGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.RefreshBillingProposalView" commandName="Refresh billing proposals" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaYWJQEee0epbhyPnLeg" elementId="ch.elexis.labitem.create" commandName="Labor Item Anlegen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaYmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.maximizePart" commandName="Maximize Active View or Editor" description="Toggles maximize/restore state of active view or editor" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaY2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.lockToolBar" commandName="Lock the Toolbars" description="Lock the Toolbars" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaZGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.exit" commandName="Exit" description="Exit the application" category="_7UVbAmJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVaZWJQEee0epbhyPnLeg" elementId="mayPrompt" name="may prompt"/>
+  </commands>
+  <commands xmi:id="_7UVaZmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.newEditor" commandName="New Editor" description="Open another editor on the active editor's input" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaZ2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.minimizePart" commandName="Minimize Active View or Editor" description="Minimizes the active view or editor" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaaGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.importTemplates" commandName="Vorlage(n) Importieren" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaaWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.documents.commandLocalEditAbort" commandName="Local Edit Abort Dokument" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaamJQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.addBookmark" commandName="Add Bookmark" description="Add a bookmark" category="_7UVbAGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaa2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.text.contentAssist.proposals" commandName="Content Assist" description="Content Assist" category="_7UVbAGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVabGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.up" commandName="Up" description="Navigate up one level" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVabWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.activateEditor" commandName="Activate Editor" description="Activate the editor" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVabmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.showSystemMenu" commandName="Show System Menu" description="Show the system menu" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVab2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.previousView" commandName="Previous View" description="Switch to the previous view" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVacGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.AddArticleToOrder" commandName="Artikel auf Bestellliste setzen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVacWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.PrintRecipe" commandName="Rezept drucken" category="_7UVbBWJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVacmJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.commandParameter.medication" name="Medication"/>
+  </commands>
+  <commands xmi:id="_7UVac2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.revert" commandName="Revert" description="Revert to the last saved state" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVadGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.views.showView" commandName="Show View" description="Shows a particular view" category="_7UVa_WJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVadWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.views.showView.viewId" name="View"/>
+    <parameters xmi:id="_7UVadmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.views.showView.secondaryId" name="Secondary Id"/>
+    <parameters xmi:id="_7UVad2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.views.showView.makeFast" name="As FastView"/>
+  </commands>
+  <commands xmi:id="_7UVaeGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.commands.connectWizard" commandName="Verbindung" description="Verbindung zu einer Datenbank herstellen" category="_7UVbB2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaeWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.selectAll" commandName="Select All" description="Select all" category="_7UVbAGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaemJQEee0epbhyPnLeg" elementId="bill.create" commandName="Rechnungen Erstellen" category="_7UVbA2JQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVae2JQEee0epbhyPnLeg" elementId="ch.elexis.RechnungErstellen.parameter" name="billables" typeId="ch.elexis.TreeType"/>
+  </commands>
+  <commands xmi:id="_7UVafGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.savePerspective" commandName="Save Perspective As" description="Save the current perspective" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVafWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.ToggleCurrentKonsultationLockCommand" commandName="Toggle current consultation lock" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVafmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.move" commandName="Move..." description="Move the selected item" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaf2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.AddMedication" commandName="Medikation hinzuf&#xfc;gen" description="Medikation hinzuf&#xfc;gen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVagGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.endLocalDocument" commandName="End local document" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVagWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.hidetrimbars" commandName="Toggle visibility of the window toolbars" description="Toggle the visibility of the toolbars of the current window" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVagmJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.documents.commandDelete" commandName="Delete Document" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVag2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.PrintTakingsList" commandName="Einnahmeliste drucken" category="_7UVbBWJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVahGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.commandParameter.medication" name="Medication"/>
+  </commands>
+  <commands xmi:id="_7UVahWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.import" commandName="Import" description="Import" category="_7UVbAmJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVahmJQEee0epbhyPnLeg" elementId="importWizardId" name="Import Wizard"/>
+  </commands>
+  <commands xmi:id="_7UVah2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.perspectives.showPerspective" commandName="Show Perspective" description="Show a particular perspective" category="_7UVa_mJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVaiGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.perspectives.showPerspective.perspectiveId" name="Parameter"/>
+    <parameters xmi:id="_7UVaiWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.perspectives.showPerspective.newWindow" name="In New Window"/>
+  </commands>
+  <commands xmi:id="_7UVaimJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.documents.commandSendAsMail" commandName="Send As Mail" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVai2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.commands.home" commandName="Home" description="Zum Anfang zur&#xfc;ckgehen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVajGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.linkWithEditor" commandName="Toggle Link with Editor" description="Toggles linking of a view's selection with the active editor's selection" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVajWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.openEditorDropDown" commandName="Quick Switch Editor" description="Open the editor drop down list" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVajmJQEee0epbhyPnLeg" elementId="ch.elexis.core.command.linkViews" commandName="Patientenauswahl verlinken" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaj2JQEee0epbhyPnLeg" elementId="at.medevit.elexis.contacts.core.command.OpenStickerPreferencePage" commandName="open sticker preference page" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVakGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.switchToEditor" commandName="Switch to Editor" description="Switch to an editor" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVakWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.help.dynamicHelp" commandName="Show Contextual Help" description="Open the contextual help" category="_7UVbBmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVakmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.nextSubTab" commandName="Next Sub-Tab" description="Switch to the next sub-tab" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVak2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.importSelectedTemplate" commandName="Vorlage Importieren" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UValGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.resetPerspective" commandName="Reset Perspective" description="Reset the current perspective to its default state" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UValWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.documents.commandLocalEditStart" commandName="Local Edit Dokument Start" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UValmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.undo" commandName="Undo" description="Undo the last operation" category="_7UVbAGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVal2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.closePart" commandName="Close Part" description="Close the active workbench part" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVamGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.help.installationDialog" commandName="Installation Information" description="Open the installation dialog" category="_7UVbBmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVamWJQEee0epbhyPnLeg" elementId="ch.elexis.mapping.2_1_7.create" commandName="Labor Items aus 2.1.7 mappen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVammJQEee0epbhyPnLeg" elementId="ch.elexis.labitem.edit" commandName="Labor Item &#xc4;ndern" category="_7UVbBWJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVam2JQEee0epbhyPnLeg" elementId="ch.elexis.labitem.edit.selected" name="Selected LabItem" typeId="ch.elexis.PersistentObjectType"/>
+  </commands>
+  <commands xmi:id="_7UVanGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.back" commandName="Back" description="Navigate back" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVanWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.closeAll" commandName="Close All" description="Close all editors" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVanmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.cut" commandName="Cut" description="Cut the selection to the clipboard" category="_7UVbAGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVan2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.Dispense" commandName="Dispensieren" description="Ausgew&#xe4;hlte Medikamente dispensieren (werden zu aktueller Konsultation verrechnet)" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaoGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.SortMove" commandName="Sort move" category="_7UVbBWJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVaoWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.sortmove.direction" name="direction" optional="false"/>
+  </commands>
+  <commands xmi:id="_7UVaomJQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.paste" commandName="Paste" description="Paste from the clipboard" category="_7UVbAGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVao2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.part.nextPage" commandName="Next Page" description="Switch to the next page" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVapGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.part.previousPage" commandName="Previous Page" description="Switch to the previous page" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVapWJQEee0epbhyPnLeg" elementId="at.medevit.medelexis.text.msword.printDialog" commandName="Drucken..." category="_7UVbBWJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVapmJQEee0epbhyPnLeg" elementId="at.medevit.medelexis.text.msword.WordTextPluginHash" name="WordTextPluginHash"/>
+  </commands>
+  <commands xmi:id="_7UVap2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.commands.SendBriefAsMail" commandName="Send Brief as E-Mail" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaqGJQEee0epbhyPnLeg" elementId="at.medevit.elexis.contacts.core.command.AdvancedFilterCommand" commandName="advanced filter dialog" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaqWJQEee0epbhyPnLeg" elementId="ch.elexis.labmapping.import" commandName="Zuordnung importieren" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaqmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.next" commandName="Next" description="Navigate to the next item" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaq2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.closePerspective" commandName="Close Perspective" description="Close the current perspective" category="_7UVbBGJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVarGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.closePerspective.perspectiveId" name="Perspective Id"/>
+  </commands>
+  <commands xmi:id="_7UVarWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.abortLocalDocument" commandName="Abort local document" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVarmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.previous" commandName="Previous" description="Navigate to the previous item" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVar2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.rename" commandName="Rename" description="Rename the selected item" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVasGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.documents.commandLocalEditOverview" commandName="Local Edit Overview Dokument" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVasWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.brief.send" commandName="Send Menu" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVasmJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.ApplyCustomSorting" commandName="Pers&#xf6;nliche Sortierung anwenden" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVas2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.Delete" commandName="L&#xf6;schen" description="Ausgew&#xe4;hlten Eintrag entfernen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVatGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.export" commandName="Export" description="Export" category="_7UVbAmJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVatWJQEee0epbhyPnLeg" elementId="exportWizardId" name="Export Wizard"/>
+  </commands>
+  <commands xmi:id="_7UVatmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.help.aboutAction" commandName="About" description="Open the about dialog" category="_7UVbBmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVat2JQEee0epbhyPnLeg" elementId="ch.elexis.ebanking_ch.command.loadESRFile" commandName="load ESR file" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVauGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.closeAllSaved" commandName="Close All Saved" description="Close all saved editors" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVauWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.edit.redo" commandName="Redo" description="Redo the last operation" category="_7UVbAGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaumJQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.print" commandName="Print" description="Print" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVau2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.documents.commandLocalEditDone" commandName="Local Edit Done Dokument" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVavGJQEee0epbhyPnLeg" elementId="org.iatrix.help.wiki.commands.helpCommand" commandName="Iatrix Help Command" category="_7UVbAWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVavWJQEee0epbhyPnLeg" elementId="bill.reminder" commandName="Mahnlauf" description="Mahnungen erstellen" category="_7UVbA2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVavmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.newWizard" commandName="New" description="Open the New item wizard" category="_7UVbAmJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVav2JQEee0epbhyPnLeg" elementId="newWizardId" name="New Wizard"/>
+  </commands>
+  <commands xmi:id="_7UVawGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.newWindow" commandName="New Window" description="Open another window" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVawWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.templatePrintSettings" commandName="Druckeinstellungen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVawmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.forwardHistory" commandName="Forward History" description="Move forward in the editor navigation history" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaw2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.spy" commandName="Show Contributing Plug-in" description="Shows contribution information for the currently selected element" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaxGJQEee0epbhyPnLeg" elementId="ch.elexis.eigenleistung.create" commandName="Eigenleistung Anlegen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaxWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.help.helpSearch" commandName="Help Search" description="Open the help search" category="_7UVbBmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaxmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.close" commandName="Close" description="Close the active editor" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVax2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.restartWorkbench" commandName="Restart" description="Restart the workbench" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVayGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.customizePerspective" commandName="Customize Perspective" description="Customize the current perspective" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVayWJQEee0epbhyPnLeg" elementId="org.eclipse.ui.help.quickStartAction" commandName="Welcome" description="Show help for beginning users" category="_7UVbBmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaymJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.ToggleCurrentKontaktLockCommand" commandName="Toggle current contact lock" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVay2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.SetAsSymptomaticMedication" commandName="Symptomatische Medikation" description="Symptomatische Medikation" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVazGJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.p2.command.update" commandName="Auf Updates &#xfc;berpr&#xfc;fen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVazWJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.ToggleCurrentCaseLockCommand" commandName="Toggle current case lock" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVazmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.previousSubTab" commandName="Previous Sub-Tab" description="Switch to the previous sub-tab" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVaz2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.SetAsFixMedication" commandName="Fix Medikation" description="Fix Medikation" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa0GJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.hideShowEditors" commandName="Toggle Shared Area Visibility" description="Toggles the visibility of the shared area" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa0WJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.showIn" commandName="Show In" category="_7UVa_2JQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVa0mJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.showIn.targetId" name="Show In Target Id" optional="false"/>
+  </commands>
+  <commands xmi:id="_7UVa02JQEee0epbhyPnLeg" elementId="org.eclipse.ui.help.displayHelp" commandName="Display Help" description="Display a Help topic" category="_7UVbBmJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVa1GJQEee0epbhyPnLeg" elementId="href" name="Help topic href"/>
+  </commands>
+  <commands xmi:id="_7UVa1WJQEee0epbhyPnLeg" elementId="at.medevit.elexis.contacts.core.command.FocusIntelligentSearch" commandName="focus intelligent search" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa1mJQEee0epbhyPnLeg" elementId="ch.elexis.labitem.merge" commandName="Labor Items vereinen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa12JQEee0epbhyPnLeg" elementId="ch.elexis.core.mail.ui.sendMail" commandName="Send E-Mail" category="_7UVbBWJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVa2GJQEee0epbhyPnLeg" elementId="ch.elexis.core.mail.ui.sendMail.attachments" name="attachments"/>
+    <parameters xmi:id="_7UVa2WJQEee0epbhyPnLeg" elementId="ch.elexis.core.mail.ui.sendMail.to" name="to"/>
+    <parameters xmi:id="_7UVa2mJQEee0epbhyPnLeg" elementId="ch.elexis.core.mail.ui.sendMail.subject" name="subject"/>
+    <parameters xmi:id="_7UVa22JQEee0epbhyPnLeg" elementId="ch.elexis.core.mail.ui.sendMail.text" name="text"/>
+  </commands>
+  <commands xmi:id="_7UVa3GJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.showViewMenu" commandName="Show View Menu" description="Show the view menu" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa3WJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.showContextMenu" commandName="Show Context Menu" description="Show the context menu" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa3mJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.loadTemplate" commandName="Vorlage &#xf6;ffnen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa32JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.exportTemplate" commandName="Vorlage exportieren" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa4GJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.backwardHistory" commandName="Backward History" description="Move backward in the editor navigation history" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa4WJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.previousTab" commandName="Previous Tab" description="Switch to the previous tab" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa4mJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.OpenArticelDetailDialog" commandName="Open Article Detail" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa42JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.PrintRecipeMenu" commandName="Rezept" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa5GJQEee0epbhyPnLeg" elementId="org.eclipse.ui.file.refresh" commandName="Refresh" description="Refresh the selected items" category="_7UVbAmJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa5WJQEee0epbhyPnLeg" elementId="org.eclipse.ui.navigate.forward" commandName="Forward" description="Navigate forward" category="_7UVa_2JQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa5mJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.PrintBillingProposalView" commandName="Print billing proposal" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa52JQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.nextPerspective" commandName="Next Perspective" description="Switch to the next perspective" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa6GJQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.medication.SwitchMedication" commandName="Medikation anpassen" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa6WJQEee0epbhyPnLeg" elementId="org.eclipse.ui.window.closeAllPerspectives" commandName="Close All Perspectives" description="Close all open perspectives" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa6mJQEee0epbhyPnLeg" elementId="org.eclipse.ui.ToggleCoolbarAction" commandName="Toggle Main Toolbar Visibility" description="Toggles the visibility of the window toolbar" category="_7UVbBGJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa62JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.command.openLocalDocuments" commandName="Open local documents" category="_7UVbBWJQEee0epbhyPnLeg"/>
+  <commands xmi:id="_7UVa7GJQEee0epbhyPnLeg" elementId="ch.elexis.eigenleistung.edit" commandName="Eigenleistung &#xc4;ndern" category="_7UVbBWJQEee0epbhyPnLeg">
+    <parameters xmi:id="_7UVa7WJQEee0epbhyPnLeg" elementId="ch.elexis.eigenleistung.edit.selected" name="Selected Eigenleistung" typeId="ch.elexis.PersistentObjectType"/>
+  </commands>
+  <commands xmi:id="_7UVa7mJQEee0epbhyPnLeg" elementId="at.medevit.elexis.contacts.core.command.AddContact" commandName="at.medevit.elexis.contacts.core.command.AddContact"/>
+  <commands xmi:id="_7UVa72JQEee0epbhyPnLeg" elementId="at.medevit.elexis.contacts.core.command.ContactRemoveMarkAsDeleted" commandName="at.medevit.elexis.contacts.core.command.ContactRemoveMarkAsDeleted"/>
+  <commands xmi:id="_7UVa8GJQEee0epbhyPnLeg" elementId="at.medevit.elexis.contacts.core.command.ContactMarkAsDeleted" commandName="at.medevit.elexis.contacts.core.command.ContactMarkAsDeleted"/>
+  <commands xmi:id="_7UVa8WJQEee0epbhyPnLeg" elementId="at.medevit.elexis.contacts.core.command.EraseContactFromDatabase" commandName="at.medevit.elexis.contacts.core.command.EraseContactFromDatabase"/>
+  <addons xmi:id="_7UVa8mJQEee0epbhyPnLeg" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_7UVa82JQEee0epbhyPnLeg" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_7UVa9GJQEee0epbhyPnLeg" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_7UVa9WJQEee0epbhyPnLeg" elementId="org.eclipse.e4.ui.workbench.commands.model" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_7UVa9mJQEee0epbhyPnLeg" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_7UVa92JQEee0epbhyPnLeg" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_7UVa-GJQEee0epbhyPnLeg" elementId="Cleanup Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.cleanupaddon.CleanupAddon"/>
+  <addons xmi:id="_7UVa-WJQEee0epbhyPnLeg" elementId="DnD Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.dndaddon.DnDAddon"/>
+  <addons xmi:id="_7UVa-mJQEee0epbhyPnLeg" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
+  <addons xmi:id="_7UVa-2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_7UVa_GJQEee0epbhyPnLeg" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
+  <categories xmi:id="_7UVa_WJQEee0epbhyPnLeg" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
+  <categories xmi:id="_7UVa_mJQEee0epbhyPnLeg" elementId="org.eclipse.ui.category.perspectives" name="Perspectives" description="Commands for opening perspectives"/>
+  <categories xmi:id="_7UVa_2JQEee0epbhyPnLeg" elementId="org.eclipse.ui.category.navigate" name="Navigate"/>
+  <categories xmi:id="_7UVbAGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.category.edit" name="Edit"/>
+  <categories xmi:id="_7UVbAWJQEee0epbhyPnLeg" elementId="org.iatrix.help.wiki.commands.category" name="Iatrix Help Category"/>
+  <categories xmi:id="_7UVbAmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.category.file" name="File"/>
+  <categories xmi:id="_7UVbA2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.commands.bills" name="bills" description="Commands f&#xfc;r Rechnungen"/>
+  <categories xmi:id="_7UVbBGJQEee0epbhyPnLeg" elementId="org.eclipse.ui.category.window" name="Window"/>
+  <categories xmi:id="_7UVbBWJQEee0epbhyPnLeg" elementId="org.eclipse.core.commands.categories.autogenerated" name="Uncategorized" description="Commands that were either auto-generated or have no category"/>
+  <categories xmi:id="_7UVbBmJQEee0epbhyPnLeg" elementId="org.eclipse.ui.category.help" name="Help"/>
+  <categories xmi:id="_7UVbB2JQEee0epbhyPnLeg" elementId="ch.elexis.core.ui.commands.kategorie" name="Elexis"/>
+</application:Application>

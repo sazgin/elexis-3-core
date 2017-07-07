@@ -15,8 +15,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.eclipse.jface.action.ICoolBarManager;
-import org.eclipse.jface.window.ApplicationWindow;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -26,7 +28,6 @@ import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
@@ -35,7 +36,7 @@ import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.ToolBar;
 import org.eclipse.swt.widgets.ToolItem;
 import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.menus.WorkbenchWindowControlContribution;
+import org.eclipse.ui.internal.WorkbenchWindow;
 
 import ch.elexis.core.data.activator.CoreHub;
 import ch.elexis.core.data.events.ElexisEvent;
@@ -54,7 +55,7 @@ import ch.elexis.data.Mandant;
  * 
  * @since 3.1 do enable items according to {@link Anwender#getExecutiveDoctorsWorkingFor()}
  */
-public class MandantSelectionContributionItem extends WorkbenchWindowControlContribution {
+public class MandantSelectionContributionItem {
 	
 	private ToolItem item;
 	private Menu menu;
@@ -66,7 +67,7 @@ public class MandantSelectionContributionItem extends WorkbenchWindowControlCont
 		ElexisEvent.EVENT_MANDATOR_CHANGED) {
 		public void runInUi(ElexisEvent ev){
 			ICoolBarManager icb =
-				((ApplicationWindow) PlatformUI.getWorkbench().getActiveWorkbenchWindow())
+				((WorkbenchWindow) PlatformUI.getWorkbench().getActiveWorkbenchWindow())
 					.getCoolBarManager2();
 			Mandant m = (Mandant) ev.getObject();
 			if (m != null && item != null) {
@@ -124,9 +125,8 @@ public class MandantSelectionContributionItem extends WorkbenchWindowControlCont
 		ElexisEventDispatcher.getInstance().addListeners(eeli_mandant, eeli_user);
 	}
 	
-	@Override
-//	public void fill(ToolBar parent, int index){
-	protected Control createControl(Composite parent) {
+	@PostConstruct
+	protected void createControl(Composite parent){
 		ToolBar toolbar = new ToolBar(parent, SWT.NONE);
 		
 		// dispose old items first
@@ -150,7 +150,7 @@ public class MandantSelectionContributionItem extends WorkbenchWindowControlCont
 		});
 		mandants = qre.toArray(new Mandant[] {});
 		if (mandants.length < 2)
-			return null;
+			return;
 		
 		item = new ToolItem(toolbar, SWT.DROP_DOWN);
 		item.setToolTipText("Aktuell ausgewählter Mandant bzw. Mandantenauswahl");
@@ -182,9 +182,6 @@ public class MandantSelectionContributionItem extends WorkbenchWindowControlCont
 		}
 		
 		adaptForAnwender(null);
-		
-		toolbar.pack();
-		return toolbar;
 	}
 	
 	private final Listener selectionListener = new Listener() {
@@ -226,14 +223,8 @@ public class MandantSelectionContributionItem extends WorkbenchWindowControlCont
 		return image;
 	}
 	
-	@Override
+	@PreDestroy
 	public void dispose(){
 		ElexisEventDispatcher.getInstance().removeListeners(eeli_mandant, eeli_user);
 	}
-	
-	@Override
-	public boolean isDynamic(){
-		return true;
-	}
-	
 }

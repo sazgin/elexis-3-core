@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?eclipse version="3.4"?>
 <plugin>
- <extension-point id="Sidebar" name="%elexis.sidebar" schema="schema/Sidebar.exsd"/>
+
+   <extension-point id="Sidebar" name="%elexis.sidebar" schema="schema/Sidebar.exsd"/>
    <extension-point id="LaborDatenImport" name="%elexis.importLab" schema="schema/LaborDatenImport.exsd"/>
    <extension-point id="FremdDatenImport" name="%elexis.importExt" schema="schema/FremdDatenImport.exsd"/>
    <extension-point id="Text" name="%elexis.text" schema="schema/Text.exsd"/>
@@ -16,40 +16,40 @@
    <extension-point id="LoginNews" name="%elexis.loginNews" schema="schema/LoginNews.exsd"/>
    <extension-point id="TextTemplateRequirement" name="%elexis.textTemplate" schema="schema/TextTemplateRequirement.exsd"/>
    <extension-point id="ViewContribution" name="ViewContribution" schema="schema/ViewContribution.exsd"/>
-   
-      <extension
+
+   <extension
          point="org.eclipse.ui.contexts">
       <context
+            name="%context.name.0"
             description="%context.description.0"
             id="ch.elexis.context.billing"
-            name="%context.name.0"
             parentId="org.eclipse.ui.contexts.window">
       </context>
    </extension>
-      <extension
+   <extension
          point="org.eclipse.ui.menus">
-                  <menuContribution
-               allPopups="false"
-               locationURI="toolbar:org.eclipse.ui.trim.status">
-            <toolbar
-                  id="ch.elexis.core.ui.toolbar.lockstatus">
-               <command
-                     commandId="ch.elexis.core.ui.locks.LockStatusDialog"
-                     icon="icon://IMG_LOCK_CLOSED"
-                     label="%showLockStatusDialog"
-                     style="push"
-                     tooltip="Show lock status information">
-                  <visibleWhen
-                        checkEnabled="false">
-                     <not>
-                        <test
-                              property="ch.elexis.commands.elexisPropertyTester.STANDALONE">
-                        </test>
-                     </not>
-                  </visibleWhen>
-               </command>
-            </toolbar>
-         </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.trim.status">
+         <toolbar
+               id="ch.elexis.core.ui.toolbar.lockstatus">
+            <command
+                  commandId="ch.elexis.core.ui.locks.LockStatusDialog"
+                  label="%showLockStatusDialog"
+                  icon="icon://IMG_LOCK_CLOSED"
+                  style="push"
+                  tooltip="Show lock status information">
+               <visibleWhen
+                     checkEnabled="false">
+                  <not>
+                     <test
+                           property="ch.elexis.commands.elexisPropertyTester.STANDALONE">
+                     </test>
+                  </not>
+               </visibleWhen>
+            </command>
+         </toolbar>
+      </menuContribution>
       <menuContribution
             allPopups="false"
             locationURI="toolbar:org.eclipse.ui.main.toolbar">
@@ -57,8 +57,8 @@
                id="ch.elexis.toolbar1">
             <command
                   commandId="org.eclipse.ui.views.showView"
-                  icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/new_wiz.gif"
                   label="Views anzeigen"
+                  icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/new_wiz.gif"
                   style="push"
                   tooltip="%command.showViews">
                <visibleWhen
@@ -70,21 +70,14 @@
                </visibleWhen>
             </command>
          </toolbar>
-         <toolbar
-               id="ch.elexis.coolbar.MandantSelection">
-            <dynamic
-                  class="ch.elexis.core.ui.coolbar.MandantSelectionContributionItem"
-                  id="ch.elexis.core.ui.coolbar.MandantSelectionContributionItem">
-            </dynamic>
-         </toolbar>
       </menuContribution>
       <menuContribution
             allPopups="false"
             locationURI="popup:ch.elexis.LeistungenView">
          <command
                commandId="org.eclipse.ui.file.properties"
-               icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/system-search-3.png"
                label="%properties"
+               icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/system-search-3.png"
                style="push">
          </command>
       </menuContribution>
@@ -93,8 +86,8 @@
             locationURI="popup:ch.elexis.PatListView">
          <command
                commandId="org.eclipse.ui.file.properties"
-               icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/system-search-3.png"
                label="%properties"
+               icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/system-search-3.png"
                style="push">
          </command>
       </menuContribution>
@@ -103,8 +96,8 @@
             locationURI="popup:ch.elexis.codedetailview">
          <command
                commandId="org.eclipse.ui.file.properties"
-               icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/system-search-3.png"
                label="%properties"
+               icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/system-search-3.png"
                style="push">
          </command>
       </menuContribution>
@@ -122,8 +115,8 @@
             locationURI="toolbar:ch.elexis.BehandlungenVerrechnenView">
          <command
                commandId="ch.elexis.core.command.linkViews"
-               icon="icon://IMG_SYNC"
                label="Patientenauswahl verlinken"
+               icon="icon://IMG_SYNC"
                style="toggle">
          </command>
       </menuContribution>
@@ -132,8 +125,8 @@
             locationURI="toolbar:ch.elexis.FallDetailView">
          <command
                commandId="ch.elexis.core.command.copyFall"
-               icon="icon://IMG_COPY"
                label="Fall kopieren"
+               icon="icon://IMG_COPY"
                style="push">
          </command>
       </menuContribution>
@@ -142,8 +135,8 @@
             locationURI="toolbar:ch.elexis.views.textsystem.TextTemplateView">
          <command
                commandId="ch.elexis.core.ui.command.importTemplates"
-               icon="icon://IMG_IMPORT"
                label="Vorlage(n) importieren"
+               icon="icon://IMG_IMPORT"
                style="push"
                tooltip="Beliebige Vorlage(n)  importieren">
          </command>
@@ -153,26 +146,26 @@
             locationURI="popup:ch.elexis.views.textsystem.TextTemplateView">
          <command
                commandId="ch.elexis.core.ui.command.loadTemplate"
-               icon="icon://IMG_DOCUMENT_TEXT"
                label="Vorlage öffnen"
+               icon="icon://IMG_DOCUMENT_TEXT"
                style="push">
          </command>
          <command
                commandId="ch.elexis.core.ui.command.templatePrintSettings"
-               icon="icon://IMG_PRINTER"
                label="Druckeinstellungen"
+               icon="icon://IMG_PRINTER"
                style="push">
          </command>
          <command
                commandId="ch.elexis.core.ui.command.createMandantTemplate"
-               icon="icon://IMG_COPY"
                label="Mandant Vorlage erstellen"
+               icon="icon://IMG_COPY"
                style="push">
          </command>
          <command
                commandId="ch.elexis.core.ui.command.deleteTemplate"
-               icon="icon://IMG_DELETE"
                label="Löschen"
+               icon="icon://IMG_DELETE"
                style="push">
          </command>
          <separator
@@ -185,15 +178,15 @@
          </separator>
          <command
                commandId="ch.elexis.core.ui.command.importSelectedTemplate"
-               icon="icon://IMG_IMPORT"
                label="Importieren"
+               icon="icon://IMG_IMPORT"
                style="push"
                tooltip="Selektierte Vorlage importieren">
          </command>
          <command
                commandId="ch.elexis.core.ui.command.exportTemplate"
-               icon="icon://IMG_EXPORT"
                label="Exportieren"
+               icon="icon://IMG_EXPORT"
                style="push">
          </command>
       </menuContribution>
@@ -202,14 +195,14 @@
             locationURI="toolbar:ch.elexis.BriefAuswahlView">
          <command
                commandId="ch.elexis.core.ui.brief.send"
-               icon="icon://IMG_MAIL_SEND"
                label="Versenden"
+               icon="icon://IMG_MAIL_SEND"
                style="pulldown">
          </command>
          <command
                commandId="ch.elexis.core.ui.command.openLocalDocuments"
-               icon="icon://IMG_EDIT"
                label="Offene lokale Dokumente"
+               icon="icon://IMG_EDIT"
                style="push"
                tooltip="Offene lokale Dokumente">
             <visibleWhen
@@ -240,8 +233,8 @@
             locationURI="toolbar:ch.elexis.core.ui.views.rechnung.BillingProposalView">
          <command
                commandId="ch.elexis.core.ui.StartBillingProposal"
-               icon="icon://IMG_WIZARD"
                label="Rechnungs-Vorschlag"
+               icon="icon://IMG_WIZARD"
                style="push">
          </command>
       </menuContribution>
@@ -250,8 +243,8 @@
             locationURI="toolbar:ch.elexis.core.ui.views.rechnung.BillingProposalView">
          <command
                commandId="ch.elexis.core.ui.RefreshBillingProposalView"
-               icon="icon://IMG_REFRESH"
                label="Rechnungs-Vorschlag aktualisieren"
+               icon="icon://IMG_REFRESH"
                style="push">
          </command>
       </menuContribution>
@@ -260,8 +253,8 @@
             locationURI="toolbar:ch.elexis.core.ui.views.rechnung.BillingProposalView">
          <command
                commandId="ch.elexis.core.ui.BillingProposalViewCreateBills"
-               icon="icon://IMG_BILL"
                label="Rechnungen erzeugen"
+               icon="icon://IMG_BILL"
                style="push">
             <parameter
                   name="ch.elexis.core.ui.BillingProposalViewCreateBills.selection"
@@ -274,8 +267,8 @@
             locationURI="popup:ch.elexis.core.ui.views.rechnung.BillingProposalView">
          <command
                commandId="ch.elexis.core.ui.BillingProposalViewCreateBills"
-               icon="icon://IMG_BILL"
                label="Rechnungen erzeugen"
+               icon="icon://IMG_BILL"
                style="push">
             <parameter
                   name="ch.elexis.core.ui.BillingProposalViewCreateBills.selection"
@@ -288,8 +281,8 @@
             locationURI="toolbar:ch.elexis.core.ui.views.rechnung.BillingProposalView">
          <command
                commandId="ch.elexis.core.ui.PrintBillingProposalView"
-               icon="icon://IMG_PRINTER"
                label="Rechnungs-Vorschlag drucken"
+               icon="icon://IMG_PRINTER"
                style="push">
          </command>
       </menuContribution>
@@ -298,8 +291,8 @@
             locationURI="popup:ch.elexis.core.ui.views.rechnung.BillingProposalView">
          <command
                commandId="ch.elexis.core.ui.BillingProposalViewRemove"
-               icon="icon://IMG_DELETE"
                label="aus Vorschlag entfernen"
+               icon="icon://IMG_DELETE"
                style="push">
          </command>
       </menuContribution>
@@ -308,8 +301,8 @@
             locationURI="toolbar:ch.elexis.Konsdetail">
          <command
                commandId="ch.elexis.core.ui.command.openLocalDocuments"
-               icon="icon://IMG_EDIT"
                label="Offene lokale Dokumente"
+               icon="icon://IMG_EDIT"
                style="push"
                tooltip="Offene lokale Dokumente">
             <visibleWhen
@@ -321,197 +314,206 @@
          </command>
       </menuContribution>
    </extension>
-      <extension
+   <extension
          point="org.eclipse.ui.preferencePages">
       <page
+            name="%elexis.generalPrefs"
             category="ch.elexis.core.ui.preferences.SystemPreferencePage"
             class="ch.elexis.core.ui.preferences.Ablauf"
-            id="ch.elexis.preferences.general"
-            name="%elexis.generalPrefs"/>
+            id="ch.elexis.preferences.general">
+      </page>
       <page
+            name="%elexis.databasePrefs"
             category="ch.elexis.core.ui.preferences.SystemPreferencePage"
             class="ch.elexis.core.ui.preferences.Datenbank"
-            id="ch.elexis.preferences.connect"
-            name="%elexis.databasePrefs"/>
+            id="ch.elexis.preferences.connect">
+      </page>
       <page
+            name="%elexis.groupPrefs"
             class="ch.elexis.core.ui.preferences.Gruppen"
-            id="ch.elexis.preferences.security"
-            name="%elexis.groupPrefs"/>
+            id="ch.elexis.preferences.security">
+      </page>
       <page
+            name="%elexis.textPrefs"
             class="ch.elexis.core.ui.preferences.Texterstellung"
-            id="ch.elexis.preferences.Texterstellung"
-            name="%elexis.textPrefs"/>
+            id="ch.elexis.preferences.Texterstellung">
+      </page>
       <page
+            name="%elexis.sidebarPrefs"
             category="ch.elexis.preferences.UserPreferences"
             class="ch.elexis.core.ui.preferences.SidebarPreferences"
-            id="ch.elexis.sidebarPrefs"
-            name="%elexis.sidebarPrefs"/>
+            id="ch.elexis.sidebarPrefs">
+      </page>
       <page
+            name="%elexis.importerPrefs"
             class="ch.elexis.core.ui.preferences.ImporterHost"
-            id="ch.elexis.preferences.transporters"
-            name="%elexis.importerPrefs"/>
+            id="ch.elexis.preferences.transporters">
+      </page>
       <page
-      		class="ch.elexis.core.ui.preferences.Services"
-      		id="ch.elexis.preferences.onlineservices"
-      		name="%elexis.online"/>
-      <!--page
-            class="ch.elexis.preferences.DokumentKategorie"
-            id="ch.elexis.BriefKategorienPrefs"
-            name="%elexis.docCategoryPrefs"/-->
+            name="%elexis.online"
+            class="ch.elexis.core.ui.preferences.Services"
+            id="ch.elexis.preferences.onlineservices">
+      </page>
       <page
+            name="%elexis.activityCodePrefs"
             class="ch.elexis.core.ui.preferences.Leistungscodes"
-            id="ch.elexis.Leistungscodes"
-            name="%elexis.activityCodePrefs"/>
+            id="ch.elexis.Leistungscodes">
+      </page>
       <page
+            name="%elexis.printerPrefs"
             category="ch.elexis.core.ui.preferences.SystemPreferencePage"
             class="ch.elexis.core.ui.preferences.PrinterPreferencePage"
-            id="ch.elexis.PrinterPreference"
-            name="%elexis.printerPrefs"/>
+            id="ch.elexis.PrinterPreference">
+      </page>
       <page
+            name="%elexis.reminderPrefs"
             category="ch.elexis.preferences.UserPreferences"
             class="ch.elexis.core.ui.preferences.ReminderPrefences"
-            id="ch.elexis.reminderprefs"
-            name="%elexis.reminderPrefs"/>
+            id="ch.elexis.reminderprefs">
+      </page>
       <page
+            name="%elexis.userPrefs"
             class="ch.elexis.core.ui.preferences.UserPreferences"
-            id="ch.elexis.preferences.UserPreferences"
-            name="%elexis.userPrefs"/>
+            id="ch.elexis.preferences.UserPreferences">
+      </page>
       <page
+            name="%page.name.0"
             category="ch.elexis.preferences.UserPreferences"
             class="ch.elexis.core.ui.preferences.UserTextPref"
-            id="ch.elexis.preferences.usertext"
-            name="%page.name.0"/>
+            id="ch.elexis.preferences.usertext">
+      </page>
       <page
+            name="%page.name.1"
             class="ch.elexis.core.ui.preferences.StockManagementPreferencePage"
-            id="ch.elexis.preferences.LagerverwaltungPrefs"
-            name="%page.name.1"/>
+            id="ch.elexis.preferences.LagerverwaltungPrefs">
+      </page>
       <page
+            name="%elexis.userCasePrefs"
             category="ch.elexis.preferences.UserPreferences"
             class="ch.elexis.core.ui.preferences.UserCasePreferences"
-            id="ch.elexis.preferences.UserCasePreferences"
-            name="%elexis.userCasePrefs">
+            id="ch.elexis.preferences.UserCasePreferences">
       </page>
       <page
+            name="%elexis.scannerPrefs"
             class="ch.elexis.core.ui.preferences.ScannerPref"
-            id="ch.elexis.preferences.scanner"
-            name="%elexis.scannerPrefs">
+            id="ch.elexis.preferences.scanner">
       </page>
       <page
+            name="%page.name.4"
             class="ch.elexis.core.ui.preferences.Stickers"
-            id="ch.elexis.prefs.sticker"
-            name="%page.name.4">
+            id="ch.elexis.prefs.sticker">
       </page>
       <page
+            name="%page.name.5"
             category="ch.elexis.preferences.UserPreferences"
             class="ch.elexis.core.ui.preferences.FontPreference"
-            id="ch.elexis.user.fontselector"
-            name="%page.name.5">
+            id="ch.elexis.user.fontselector">
       </page>
       <page
+            name="%page.name.6"
             category="ch.elexis.preferences.UserPreferences"
             class="ch.elexis.core.ui.preferences.XIDEdit"
-            id="ch.elexis.preferences.xid.edit"
-            name="%page.name.6">
+            id="ch.elexis.preferences.xid.edit">
       </page>
       <page
+            name="%elexis.cdss"
             class="ch.elexis.core.ui.preferences.CDSSGroup"
-            id="ch.elexis.preferences.cdss"
-            name="%elexis.cdss">
+            id="ch.elexis.preferences.cdss">
       </page>
       <page
+            name="%Textvorlagen"
             category="ch.elexis.preferences.Texterstellung"
             class="ch.elexis.core.ui.preferences.TextTemplatePreferences"
-            id="ch.elexis.preferences.documentTemplates"
-            name="%Textvorlagen">
+            id="ch.elexis.preferences.documentTemplates">
       </page>
       <page
+            name="Benutzerverwaltung"
             category="ch.elexis.preferences.security"
             class="ch.elexis.core.ui.preferences.UserManagementPreferencePage"
-            id="ch.elexis.core.ui.UserManagementPreferencePage"
-            name="Benutzerverwaltung">
+            id="ch.elexis.core.ui.UserManagementPreferencePage">
       </page>
       <page
+            name="Rollen und Rechte"
             category="ch.elexis.preferences.security"
             class="ch.elexis.core.ui.preferences.RolesToAccessRightsPreferencePage"
-            id="ch.elexis.core.ui.preferences.RolesToAccessRightsPreferencePage"
-            name="Rollen und Rechte">
+            id="ch.elexis.core.ui.preferences.RolesToAccessRightsPreferencePage">
       </page>
       <page
+            name="System"
             class="ch.elexis.core.ui.preferences.SystemPreferencePage"
-            id="ch.elexis.core.ui.preferences.SystemPreferencePage"
-            name="System">
+            id="ch.elexis.core.ui.preferences.SystemPreferencePage">
       </page>
       <page
+            name="%page.name.7"
             category="ch.elexis.preferences.UserPreferences"
             class="ch.elexis.core.ui.preferences.ServiceDiagnosePrefs"
-            id="ch.elexis.servicediagnose.prefs"
-            name="%page.name.7">
+            id="ch.elexis.servicediagnose.prefs">
       </page>
       <page
+            name="%elexis.accounts"
             category="ch.elexis.Leistungscodes"
             class="ch.elexis.core.ui.preferences.AccountsPreferencePage"
-            id="ch.elexis.core.ui.billing.accounts"
-            name="%elexis.accounts">
+            id="ch.elexis.core.ui.billing.accounts">
       </page>
       <page
+            name="%elexis.billingcheck"
             category="ch.elexis.Leistungscodes"
             class="ch.elexis.core.ui.preferences.BillingChecksPreferencePage"
-            id="ch.elexis.core.ui.billing.accounts"
-            name="%elexis.billingcheck">
+            id="ch.elexis.core.ui.billing.accounts">
       </page>
    </extension>
-      <extension
-            point="org.eclipse.ui.bindings">
-         <key
-               commandId="org.eclipse.ui.window.showKeyAssist"
-               schemeId="ch.elexis.ui.keybindingScheme"
-               sequence="M1+SHIFT+L">
-         </key>
-         <scheme
-               description="KeyBindings that use this scheme will be displayed by the KeyAssistant in Elexis"
-               id="ch.elexis.ui.keybindingScheme"
-               name="Elexis Keybinding Scheme"
-               parentId="org.eclipse.ui.defaultAcceleratorConfiguration">
-         </scheme>
-         <key
-               commandId="ch.elexis.core.data.command.RequestLockCommand"
-               schemeId="ch.elexis.ui.keybindingScheme"
-               sequence="M1+L">
-         </key>
-         <key
-               commandId="ch.elexis.core.data.command.ReleaseAllLocksCommand"
-               schemeId="ch.elexis.ui.keybindingScheme"
-               sequence="M1+R">
-         </key>
-         <key
-               commandId="org.eclipse.ui.views.showView"
-               schemeId="ch.elexis.ui.keybindingScheme"
-               sequence="M1+N">
-         </key>
-      </extension>
-      <extension
-            point="org.eclipse.ui.services">
-         <sourceProvider
-               provider="ch.elexis.core.ui.commands.sourceprovider.PatientSelectionStatus">
-            <variable
-                  name="ch.elexis.core.ui.commands.sourceprovider.patientSelectionActive"
-                  priorityLevel="workbench">
-            </variable>
-         </sourceProvider>
-      </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="org.eclipse.ui.window.showKeyAssist"
+            schemeId="ch.elexis.ui.keybindingScheme"
+            sequence="M1+SHIFT+L">
+      </key>
+      <scheme
+            name="Elexis Keybinding Scheme"
+            description="KeyBindings that use this scheme will be displayed by the KeyAssistant in Elexis"
+            id="ch.elexis.ui.keybindingScheme"
+            parentId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </scheme>
+      <key
+            commandId="ch.elexis.core.data.command.RequestLockCommand"
+            schemeId="ch.elexis.ui.keybindingScheme"
+            sequence="M1+L">
+      </key>
+      <key
+            commandId="ch.elexis.core.data.command.ReleaseAllLocksCommand"
+            schemeId="ch.elexis.ui.keybindingScheme"
+            sequence="M1+R">
+      </key>
+      <key
+            commandId="org.eclipse.ui.views.showView"
+            schemeId="ch.elexis.ui.keybindingScheme"
+            sequence="M1+N">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.services">
+      <sourceProvider
+            provider="ch.elexis.core.ui.commands.sourceprovider.PatientSelectionStatus">
+         <variable
+               priorityLevel="workbench"
+               name="ch.elexis.core.ui.commands.sourceprovider.patientSelectionActive">
+         </variable>
+      </sourceProvider>
+   </extension>
    <extension
          point="ch.elexis.core.data.coreOperation">
       <coreOperation
             advisor="ch.elexis.core.ui.CoreOperationAdvisor">
       </coreOperation>
    </extension>
-      <extension
-            point="ch.elexis.core.data.OutputLogDescriptor">
-         <OutputLogDescriptor
-               Outputter="ch.elexis.core.ui.views.RezeptBlatt"
-               id="ch.elexis.RezeptBlatt">
-         </OutputLogDescriptor>
-      </extension>
+   <extension
+         point="ch.elexis.core.data.OutputLogDescriptor">
+      <OutputLogDescriptor
+            Outputter="ch.elexis.core.ui.views.RezeptBlatt"
+            id="ch.elexis.RezeptBlatt">
+      </OutputLogDescriptor>
+   </extension>
    <extension
          point="ch.elexis.core.data.RechnungsManager">
       <Rechnung
@@ -522,367 +524,381 @@
    <extension
          point="org.eclipse.ui.commands">
       <command
+            name="%elexis.loginCommand"
             categoryId="ch.elexis.core.ui.commands.kategorie"
-            id="ch.elexis.core.ui.commands.login"
-            name="%elexis.loginCommand"/>
+            id="ch.elexis.core.ui.commands.login">
+      </command>
       <category
-            id="ch.elexis.core.ui.commands.kategorie"
-            name="%category.name.0"/>
+            name="%category.name.0"
+            id="ch.elexis.core.ui.commands.kategorie">
+      </category>
       <command
+            name="%elexis.importCommand"
             categoryId="ch.elexis.core.ui.commands.kategorie"
-            id="ch.elexis.core.ui.commands.import"
-            name="%elexis.importCommand"/>
+            id="ch.elexis.core.ui.commands.import">
+      </command>
       <command
-            categoryId="ch.elexis.core.ui.commands.kategorie"
+            name="%elexis.connectCommand"
             description="%command.description.0"
-            id="ch.elexis.core.ui.commands.connectWizard"
-            name="%elexis.connectCommand"/>
+            categoryId="ch.elexis.core.ui.commands.kategorie"
+            id="ch.elexis.core.ui.commands.connectWizard">
+      </command>
       <command
+            name="%command.name.0"
             description="%command.description.1"
-            id="ch.elexis.core.ui.commands.home"
-            name="%command.name.0"/>
+            id="ch.elexis.core.ui.commands.home">
+      </command>
       <command
-            categoryId="ch.elexis.core.ui.commands.bills"
             defaultHandler="ch.elexis.core.ui.commands.ErstelleRnnCommand"
-            id="bill.create"
-            name="%command.name.1">
+            name="%command.name.1"
+            categoryId="ch.elexis.core.ui.commands.bills"
+            id="bill.create">
          <commandParameter
-               id="ch.elexis.RechnungErstellen.parameter"
                name="%commandParameter.name.0"
                optional="true"
-               typeId="ch.elexis.TreeType">
+               typeId="ch.elexis.TreeType"
+               id="ch.elexis.RechnungErstellen.parameter">
          </commandParameter>
       </command>
       <category
+            name="%category.name.1"
             description="%category.description.0"
-            id="ch.elexis.core.ui.commands.bills"
-            name="%category.name.1">
+            id="ch.elexis.core.ui.commands.bills">
       </category>
       <command
-            categoryId="ch.elexis.core.ui.commands.bills"
             defaultHandler="ch.elexis.core.ui.commands.MahnlaufCommand"
+            name="%command.name.2"
             description="%command.description.2"
-            id="bill.reminder"
-            name="%command.name.2">
+            categoryId="ch.elexis.core.ui.commands.bills"
+            id="bill.reminder">
       </command>
       <commandParameterType
             converter="ch.elexis.core.ui.commands.TreeToStringConverter"
-            id="ch.elexis.TreeType"
-            type="ch.rgw.tools.Tree">
+            type="ch.rgw.tools.Tree"
+            id="ch.elexis.TreeType">
       </commandParameterType>
       <command
-            categoryId="ch.elexis.core.ui.commands.kategorie"
             defaultHandler="ch.elexis.core.ui.commands.ExportiereBloeckeCommand"
+            name="%command.name.3"
             description="%command.description.3"
-            id="serviceblocks.export"
-            name="%command.name.3">
+            categoryId="ch.elexis.core.ui.commands.kategorie"
+            id="serviceblocks.export">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.commands.EditEigenartikelUi"
-            id="ch.elexis.eigenartikel.edit"
-            name="Eigenartikel Ändern">
+            name="Eigenartikel Ändern"
+            id="ch.elexis.eigenartikel.edit">
          <commandParameter
-               id="ch.elexis.eigenartikel.edit.selected"
                name="Selected Eigenartikel"
                optional="true"
-               typeId="ch.elexis.PersistentObjectType">
+               typeId="ch.elexis.PersistentObjectType"
+               id="ch.elexis.eigenartikel.edit.selected">
          </commandParameter>
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.commands.EditEigenleistungUi"
-            id="ch.elexis.eigenleistung.edit"
-            name="Eigenleistung Ändern">
+            name="Eigenleistung Ändern"
+            id="ch.elexis.eigenleistung.edit">
          <commandParameter
-               id="ch.elexis.eigenleistung.edit.selected"
                name="Selected Eigenleistung"
                optional="true"
-               typeId="ch.elexis.PersistentObjectType">
+               typeId="ch.elexis.PersistentObjectType"
+               id="ch.elexis.eigenleistung.edit.selected">
          </commandParameter>
       </command>
       <commandParameterType
             converter="ch.elexis.core.ui.commands.PersistentObjectConverter"
-            id="ch.elexis.PersistentObjectType"
-            type="ch.elexis.data.PersistentObject">
+            type="ch.elexis.data.PersistentObject"
+            id="ch.elexis.PersistentObjectType">
       </commandParameterType>
       <command
             defaultHandler="ch.elexis.core.ui.commands.CreateEigenleistungUi"
-            id="ch.elexis.eigenleistung.create"
-            name="Eigenleistung Anlegen">
+            name="Eigenleistung Anlegen"
+            id="ch.elexis.eigenleistung.create">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.commands.KonsZumVerrechnenLinkCommand"
-            id="ch.elexis.core.command.linkViews"
-            name="Patientenauswahl verlinken">
+            name="Patientenauswahl verlinken"
+            id="ch.elexis.core.command.linkViews">
          <state
                class="org.eclipse.ui.handlers.RegistryToggleState:true"
                id="org.eclipse.ui.commands.toggleState">
          </state>
       </command>
       <command
-            id="ch.elexis.core.command.copyFall"
-            name="Fall kopieren">
+            name="Fall kopieren"
+            id="ch.elexis.core.command.copyFall">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.commands.LoadTemplateCommand"
-            id="ch.elexis.core.ui.command.loadTemplate"
-            name="Vorlage öffnen">
+            name="Vorlage öffnen"
+            id="ch.elexis.core.ui.command.loadTemplate">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.commands.ImportSelectedTemplateCommand"
-            id="ch.elexis.core.ui.command.importSelectedTemplate"
-            name="Vorlage Importieren">
+            name="Vorlage Importieren"
+            id="ch.elexis.core.ui.command.importSelectedTemplate">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.commands.ImportTemplatesCommand"
-            id="ch.elexis.core.ui.command.importTemplates"
-            name="Vorlage(n) Importieren">
-      </command><command
+            name="Vorlage(n) Importieren"
+            id="ch.elexis.core.ui.command.importTemplates">
+      </command>
+      <command
             defaultHandler="ch.elexis.core.ui.commands.ExportTemplateCommand"
-            id="ch.elexis.core.ui.command.exportTemplate"
-            name="Vorlage exportieren">ieren">
+            name="Vorlage exportieren"
+            id="ch.elexis.core.ui.command.exportTemplate">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.commands.DeleteTemplateCommand"
-            id="ch.elexis.core.ui.command.deleteTemplate"
-            name="Vorlage löschen">
+            name="Vorlage löschen"
+            id="ch.elexis.core.ui.command.deleteTemplate">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.commands.CreateMandantTemplateCommand"
-            id="ch.elexis.core.ui.command.createMandantTemplate"
-            name="Personalisierte Vorlage">
+            name="Personalisierte Vorlage"
+            id="ch.elexis.core.ui.command.createMandantTemplate">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.commands.TemplatePrintSettingsCommand"
-            id="ch.elexis.core.ui.command.templatePrintSettings"
-            name="Druckeinstellungen">
+            name="Druckeinstellungen"
+            id="ch.elexis.core.ui.command.templatePrintSettings">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.locks.ToggleCurrentPatientLockHandler"
-            id="ch.elexis.core.ui.command.ToggleCurrentPatientLockCommand"
-            name="Toggle current patient lock">
+            name="Toggle current patient lock"
+            id="ch.elexis.core.ui.command.ToggleCurrentPatientLockCommand">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.locks.ToggleCurrentKontaktLockHandler"
-            id="ch.elexis.core.ui.command.ToggleCurrentKontaktLockCommand"
-            name="Toggle current contact lock">
+            name="Toggle current contact lock"
+            id="ch.elexis.core.ui.command.ToggleCurrentKontaktLockCommand">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.locks.ToggleCurrentKonsultationLockHandler"
-            id="ch.elexis.core.ui.command.ToggleCurrentKonsultationLockCommand"
-            name="Toggle current consultation lock">
+            name="Toggle current consultation lock"
+            id="ch.elexis.core.ui.command.ToggleCurrentKonsultationLockCommand">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.locks.LockStatusDialogHandler"
-            id="ch.elexis.core.ui.locks.LockStatusDialog"
-            name="Show overall lock status">
+            name="Show overall lock status"
+            id="ch.elexis.core.ui.locks.LockStatusDialog">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.locks.ToggleCurrentCaseLockHandler"
-            id="ch.elexis.core.ui.command.ToggleCurrentCaseLockCommand"
-            name="Toggle current case lock">
+            name="Toggle current case lock"
+            id="ch.elexis.core.ui.command.ToggleCurrentCaseLockCommand">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.commands.SendBriefAsMailHandler"
-            id="ch.elexis.core.ui.commands.SendBriefAsMail"
-            name="Send Brief as E-Mail">
+            name="Send Brief as E-Mail"
+            id="ch.elexis.core.ui.commands.SendBriefAsMail">
       </command>
       <command
             defaultHandler="ch.elexis.core.ui.commands.SendHandler"
-            id="ch.elexis.core.ui.brief.send"
-            name="Send Menu">
+            name="Send Menu"
+            id="ch.elexis.core.ui.brief.send">
       </command>
       <command
-            id="ch.elexis.core.ui.StartBillingProposal"
-            name="Start billing proposal">
+            name="Start billing proposal"
+            id="ch.elexis.core.ui.StartBillingProposal">
       </command>
       <command
-            id="ch.elexis.core.ui.RefreshBillingProposalView"
-            name="Refresh billing proposals">
+            name="Refresh billing proposals"
+            id="ch.elexis.core.ui.RefreshBillingProposalView">
       </command>
       <command
-            id="ch.elexis.core.ui.BillingProposalViewCreateBills"
-            name="Create bills from proposal">
+            name="Create bills from proposal"
+            id="ch.elexis.core.ui.BillingProposalViewCreateBills">
          <commandParameter
-               id="ch.elexis.core.ui.BillingProposalViewCreateBills.selection"
+               values="all,selection"
                name="selection"
                optional="true"
-               values="all,selection">
+               id="ch.elexis.core.ui.BillingProposalViewCreateBills.selection">
          </commandParameter>
       </command>
       <command
-            id="ch.elexis.core.ui.PrintBillingProposalView"
-            name="Print billing proposal">
+            name="Print billing proposal"
+            id="ch.elexis.core.ui.PrintBillingProposalView">
       </command>
       <command
-            id="ch.elexis.core.ui.BillingProposalViewRemove"
-            name="Remove from proposal">
+            name="Remove from proposal"
+            id="ch.elexis.core.ui.BillingProposalViewRemove">
       </command>
       <command
-            id="ch.elexis.core.ui.command.openLocalDocuments"
-            name="Open local documents">
+            name="Open local documents"
+            id="ch.elexis.core.ui.command.openLocalDocuments">
       </command>
       <command
-            id="ch.elexis.core.ui.command.endLocalDocument"
-            name="End local document">
+            name="End local document"
+            id="ch.elexis.core.ui.command.endLocalDocument">
       </command>
       <command
-            id="ch.elexis.core.ui.command.abortLocalDocument"
-            name="Abort local document">
+            name="Abort local document"
+            id="ch.elexis.core.ui.command.abortLocalDocument">
       </command>
       <command
-            id="ch.elexis.core.ui.command.startEditLocalDocument"
-            name="Start edit local document">
+            name="Start edit local document"
+            id="ch.elexis.core.ui.command.startEditLocalDocument">
       </command>
    </extension>
-      <extension
-            point="ch.elexis.core.ui.KonsExtension">
-         <Link
-               KonsExtension="ch.elexis.core.ui.text.XrefExtension"
-               name="DocumentLink">
-         </Link>
-         <Makro
-               KonsMakro="ch.elexis.core.ui.text.BlockMakro"
-               name="enabled">
-         </Makro>
-         <Makro
-               KonsMakro="ch.elexis.core.ui.text.FavoritenKonsMakro"
-               name="Makros Verrechenbar Favoriten">
-         </Makro>
-         <Link
-               KonsExtension="ch.elexis.core.ui.text.AUFExtension"
-               name="AUFLink">
-         </Link>
-      </extension>
-      <extension
-            point="ch.elexis.core.ui.Verrechnungscode">
-             <Leistung
+   <extension
+         point="ch.elexis.core.ui.KonsExtension">
+      <Link
+            KonsExtension="ch.elexis.core.ui.text.XrefExtension"
+            name="DocumentLink">
+      </Link>
+      <Makro
+            name="enabled"
+            KonsMakro="ch.elexis.core.ui.text.BlockMakro">
+      </Makro>
+      <Makro
+            name="Makros Verrechenbar Favoriten"
+            KonsMakro="ch.elexis.core.ui.text.FavoritenKonsMakro">
+      </Makro>
+      <Link
+            KonsExtension="ch.elexis.core.ui.text.AUFExtension"
+            name="AUFLink">
+      </Link>
+   </extension>
+   <extension
+         point="ch.elexis.core.ui.Verrechnungscode">
+      <Leistung
+            name="Eigenleistung"
             CodeDetailDisplay="ch.elexis.core.ui.eigenleistung.EigenleistungDetailDisplay"
-            CodeSelectorFactory="ch.elexis.core.ui.eigenleistung.EigenleistungCodeSelectorFactory"
             ElementFactory="ch.elexis.data.PersistentObjectFactory"
-            name="Eigenleistung">
+            CodeSelectorFactory="ch.elexis.core.ui.eigenleistung.EigenleistungCodeSelectorFactory">
       </Leistung>
-             <Leistung
-                   CodeDetailDisplay="ch.elexis.core.ui.views.codesystems.BlockDetailDisplay"
-                   CodeSelectorFactory="ch.elexis.core.ui.views.codesystems.BlockSelector"
-                   ElementFactory="ch.elexis.data.PersistentObjectFactory"
-                   ImporterClass="ch.elexis.core.ui.views.codesystems.BlockImporter"
-                   name="Block">
-             </Leistung>
-      </extension>
-      <extension
-            point="org.eclipse.ui.propertyPages">
-         <page
-               class="ch.elexis.core.ui.propertypage.PatientPropertyPage"
-               icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/personal.png"
-               id="at.medevit.elexis.properties.propertyPage.PatientPropertyPage"
-               name="%details">
-            <enabledWhen>
-               <instanceof
-                     value="ch.elexis.data.Patient">
-               </instanceof>
-            </enabledWhen>
-         </page>
-         <page
-               class="ch.elexis.core.ui.propertypage.PatientAddressPage"
-               icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/address-book-new-2.png"
-               id="at.medevit.elexis.properties.propertyPage.PatientAddressPage"
-               name="%address">
-            <enabledWhen>
-               <instanceof
-                     value="ch.elexis.data.Patient">
-               </instanceof>
-            </enabledWhen>
-         </page>
-         <page
-               class="ch.elexis.core.ui.propertypage.XIDPropertyPage"
-               icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/emblem-symbolic-link-2.png"
-               id="at.medevit.elexis.properties.propertyPage.XIDPropertyPage"
-               name="XID">
-            <enabledWhen>
-               <instanceof
-                     value="ch.elexis.data.PersistentObject">
-               </instanceof>
-            </enabledWhen>
-         </page>
-         <page
-               class="ch.elexis.core.ui.propertypage.ExtInfoPropertyPage"
-               icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/emblem-symbolic-link-2.png"
-               id="at.medevit.elexis.properties.propertyPage.ExtInfoPropertyPage"
-               name="ExtInfo">
-         </page>
-      </extension>
-      <extension
-            point="ch.elexis.core.ui.TextTemplateRequirement">
-         <TextTemplateRequirement
-               element="ch.elexis.core.ui.text.TextTemplateRequirement">
-         </TextTemplateRequirement>
-      </extension>
-      <extension
-            point="org.eclipse.ui.handlers">
-         <handler
-               class="ch.elexis.core.ui.commands.FallCopyCommand"
-               commandId="ch.elexis.core.command.copyFall">
-            <enabledWhen>
-               <test
-                     args="Fall/copy"
-                     property="ch.elexis.commands.propertyTester.ACE">
-               </test>
-            </enabledWhen>
-         </handler>
-         <handler
-               class="ch.elexis.core.ui.commands.StartBillingProposalHandler"
-               commandId="ch.elexis.core.ui.StartBillingProposal">
-         </handler>
-         <handler
-               class="ch.elexis.core.ui.commands.RefreshBillingProposalViewHandler"
-               commandId="ch.elexis.core.ui.RefreshBillingProposalView">
-         </handler>
-         <handler
-               class="ch.elexis.core.ui.commands.BillingProposalViewCreateBillsHandler"
-               commandId="ch.elexis.core.ui.BillingProposalViewCreateBills">
-         </handler>
-         <handler
-               class="ch.elexis.core.ui.commands.PrintBillingProposalHandler"
-               commandId="ch.elexis.core.ui.PrintBillingProposalView">
-         </handler>
-         <handler
-               class="ch.elexis.core.ui.commands.BillingProposalRemoveHandler"
-               commandId="ch.elexis.core.ui.BillingProposalViewRemove">
-         </handler>
-         <handler
-               commandId="ch.elexis.core.ui.BillingProposalViewRemove">
-         </handler>
-         <handler
-               class="ch.elexis.core.ui.commands.EndLocalDocumentHandler"
-               commandId="ch.elexis.core.ui.command.endLocalDocument">
-         </handler>
-         <handler
-               class="ch.elexis.core.ui.commands.AbortLocalDocumentHandler"
-               commandId="ch.elexis.core.ui.command.abortLocalDocument">
-         </handler>
-         <handler
-               class="ch.elexis.core.ui.commands.OpenLocalDocumentsHandler"
-               commandId="ch.elexis.core.ui.command.openLocalDocuments">
-         </handler>
-         <handler
-               class="ch.elexis.core.ui.commands.StartEditLocalDocumentHandler"
-               commandId="ch.elexis.core.ui.command.startEditLocalDocument">
-         </handler>
-      </extension>
-      <extension
-            point="org.eclipse.ui.startup">
-         <startup
-               class="ch.elexis.core.ui.startup.UiStartup">
-         </startup>
-      </extension>
-      <extension
-            point="org.eclipse.core.expressions.propertyTesters">
-         <propertyTester
-               class="ch.elexis.core.ui.property.PropertyTester"
-               id="ch.elexis.core.ui.propertyTester"
-               namespace="ch.elexis.core.ui.property"
-               properties="documenteditlocal"
-               type="java.lang.Object">
-         </propertyTester>
-      </extension>
+      <Leistung
+            name="Block"
+            CodeDetailDisplay="ch.elexis.core.ui.views.codesystems.BlockDetailDisplay"
+            ElementFactory="ch.elexis.data.PersistentObjectFactory"
+            ImporterClass="ch.elexis.core.ui.views.codesystems.BlockImporter"
+            CodeSelectorFactory="ch.elexis.core.ui.views.codesystems.BlockSelector">
+      </Leistung>
+   </extension>
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            name="%details"
+            icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/personal.png"
+            class="ch.elexis.core.ui.propertypage.PatientPropertyPage"
+            id="at.medevit.elexis.properties.propertyPage.PatientPropertyPage">
+         <enabledWhen>
+            <instanceof
+                  value="ch.elexis.data.Patient">
+            </instanceof>
+         </enabledWhen>
+      </page>
+      <page
+            name="%address"
+            icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/address-book-new-2.png"
+            class="ch.elexis.core.ui.propertypage.PatientAddressPage"
+            id="at.medevit.elexis.properties.propertyPage.PatientAddressPage">
+         <enabledWhen>
+            <instanceof
+                  value="ch.elexis.data.Patient">
+            </instanceof>
+         </enabledWhen>
+      </page>
+      <page
+            name="XID"
+            icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/emblem-symbolic-link-2.png"
+            class="ch.elexis.core.ui.propertypage.XIDPropertyPage"
+            id="at.medevit.elexis.properties.propertyPage.XIDPropertyPage">
+         <enabledWhen>
+            <instanceof
+                  value="ch.elexis.data.PersistentObject">
+            </instanceof>
+         </enabledWhen>
+      </page>
+      <page
+            name="ExtInfo"
+            icon="platform:/plugin/ch.elexis.core.ui.icons/icons/16x16/emblem-symbolic-link-2.png"
+            class="ch.elexis.core.ui.propertypage.ExtInfoPropertyPage"
+            id="at.medevit.elexis.properties.propertyPage.ExtInfoPropertyPage">
+      </page>
+   </extension>
+   <extension
+         point="ch.elexis.core.ui.TextTemplateRequirement">
+      <TextTemplateRequirement
+            element="ch.elexis.core.ui.text.TextTemplateRequirement">
+      </TextTemplateRequirement>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="ch.elexis.core.command.copyFall"
+            class="ch.elexis.core.ui.commands.FallCopyCommand">
+         <enabledWhen>
+            <test
+                  args="Fall/copy"
+                  property="ch.elexis.commands.propertyTester.ACE">
+            </test>
+         </enabledWhen>
+      </handler>
+      <handler
+            commandId="ch.elexis.core.ui.StartBillingProposal"
+            class="ch.elexis.core.ui.commands.StartBillingProposalHandler">
+      </handler>
+      <handler
+            commandId="ch.elexis.core.ui.RefreshBillingProposalView"
+            class="ch.elexis.core.ui.commands.RefreshBillingProposalViewHandler">
+      </handler>
+      <handler
+            commandId="ch.elexis.core.ui.BillingProposalViewCreateBills"
+            class="ch.elexis.core.ui.commands.BillingProposalViewCreateBillsHandler">
+      </handler>
+      <handler
+            commandId="ch.elexis.core.ui.PrintBillingProposalView"
+            class="ch.elexis.core.ui.commands.PrintBillingProposalHandler">
+      </handler>
+      <handler
+            commandId="ch.elexis.core.ui.BillingProposalViewRemove"
+            class="ch.elexis.core.ui.commands.BillingProposalRemoveHandler">
+      </handler>
+      <handler
+            commandId="ch.elexis.core.ui.BillingProposalViewRemove">
+      </handler>
+      <handler
+            commandId="ch.elexis.core.ui.command.endLocalDocument"
+            class="ch.elexis.core.ui.commands.EndLocalDocumentHandler">
+      </handler>
+      <handler
+            commandId="ch.elexis.core.ui.command.abortLocalDocument"
+            class="ch.elexis.core.ui.commands.AbortLocalDocumentHandler">
+      </handler>
+      <handler
+            commandId="ch.elexis.core.ui.command.openLocalDocuments"
+            class="ch.elexis.core.ui.commands.OpenLocalDocumentsHandler">
+      </handler>
+      <handler
+            commandId="ch.elexis.core.ui.command.startEditLocalDocument"
+            class="ch.elexis.core.ui.commands.StartEditLocalDocumentHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="ch.elexis.core.ui.startup.UiStartup">
+      </startup>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.propertyTesters">
+      <propertyTester
+            properties="documenteditlocal"
+            namespace="ch.elexis.core.ui.property"
+            type="java.lang.Object"
+            class="ch.elexis.core.ui.property.PropertyTester"
+            id="ch.elexis.core.ui.propertyTester">
+      </propertyTester>
+   </extension>
+   <extension
+         id="ch.elexis.core.ui.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+
 </plugin>
