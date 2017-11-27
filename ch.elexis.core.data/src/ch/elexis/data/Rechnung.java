@@ -68,7 +68,7 @@ public class Rechnung extends PersistentObject {
 		addMapping(TABLENAME, BILL_NUMBER, CASE_ID, MANDATOR_ID, "RnDatum=S:D:RnDatum", BILL_STATE,
 			"StatusDatum=S:D:StatusDatum", "RnDatumVon=S:D:RnDatumVon",
 			"RnDatumBis=S:D:RnDatumBis", "Betragx100=Betrag", FLD_EXTINFO,
-			"Zahlungen=LIST:RechnungsID:ZAHLUNGEN:Datum");
+			"Zahlungen=LIST:RechnungsID:ZAHLUNGEN:Datum", FLD_EXTINFOJSON);
 	}
 	
 	public Rechnung(final String nr, final Mandant m, final Fall f, final String von,

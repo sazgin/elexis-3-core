@@ -51,6 +51,9 @@ import org.eclipse.core.runtime.Status;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import ch.elexis.core.constants.Preferences;
 import ch.elexis.core.constants.StringConstants;
 import ch.elexis.core.constants.XidConstants;
@@ -124,6 +127,9 @@ public abstract class PersistentObject implements IPersistentObject {
 	public static final String FLD_ID = "id";
 	/** predefined property to handle a field that is a compressed HashMap */
 	public static final String FLD_EXTINFO = "ExtInfo";
+	/** json representation of the extinfo field */
+	public static final String FLD_EXTINFOJSON = "ExtInfoJson";
+	
 	/** predefined property to hande a field that marks the Object as deleted */
 	public static final String FLD_DELETED = "deleted";
 	/**
@@ -1307,7 +1313,33 @@ public abstract class PersistentObject implements IPersistentObject {
 			return new Hashtable();
 		}
 		getDBConnection().getCache().put(key, ret, getCacheTime());
+		
+		storeExtInfoAsJson(ret);
 		return ret;
+	}
+
+	public void storeExtInfoAsJson(Hashtable<Object, Object> ret){
+		// store as json only if the extinfo json field is mapped
+		String dbFieldName = map(getTableName(), FLD_EXTINFOJSON, false);
+		if (dbFieldName != null) {
+			try {
+				// checks if the field exists
+				get(FLD_EXTINFOJSON);
+			} catch (PersistenceException e) {
+				/** ignore exception - field does not exists - create it **/
+				createOrModifyTable(
+					"ALTER TABLE " + getTableName() + " ADD " + dbFieldName + " TEXT;");
+			}
+			try {
+				Gson gson = new GsonBuilder().disableHtmlEscaping().create();
+				String json = gson.toJson(ret);
+				set(FLD_EXTINFOJSON, json);
+				log.debug("EXTINFO-->" + json);
+			} catch (Exception e) {
+				log.warn("EXTINFO-->not readable", e);
+			}
+			
+		}
 	}
 	
 	/**
